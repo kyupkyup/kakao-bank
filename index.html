@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>입출금통장 | 카카오뱅크</title>
-</head>
-
-<body>
-  <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입출금통장 | 카카오뱅크</title>
+  </head>
+  <body>
+    <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
           <a href="./index.html">
@@ -25,7 +23,7 @@
           <span class="icon icon-open"></span>
         </button>
         <nav class="gnb">
-          <h2 lass="a11yHidden">메인 메뉴</h2>
+          <h2 class="a11y-hidden">메인 메뉴</h2>
           <ul class="gnb__depth1">
             <li class="gnb__depth1__list">
               <button
@@ -35,10 +33,10 @@
               >
                 은행소개
               </button>
-              <div class="gnb__depth2__submenu" id="gnb1" aria-hidden="true">
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">카카오뱅크</a>
-                  <ul class="gnb__depth2">
+              <div class="gnb__depth2" id="gnb1" aria-hidden="true">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">카카오뱅크</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">브랜드</a>
                     </li>
@@ -53,9 +51,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">윤리경영</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">윤리경영</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">윤리강령</a>
                     </li>
@@ -66,9 +64,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">투자정보</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">투자정보</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">공시정보</a>
                     </li>
@@ -77,19 +75,20 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
+                <div class="gnb__depth2__submenu">
                   <a
                     href="#none"
                     title="인재채용(새창으로 열림)"
                     target="_blank"
+                    class="gnb__depth2__subtitle"
                   >
                     <!-- noopener, noreferrer 추가 -->
                     인재채용 &gt;</a
                   >
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">새소식</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">새소식</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">공지사항</a>
                     </li>
@@ -108,10 +107,10 @@
               >
                 상품안내
               </button>
-              <div class="gnb__depth2__submenu" id="gnb2" aria-hidden="true">
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">예적금</a>
-                  <ul class="gnb__depth2">
+              <div class="gnb__depth2" id="gnb2" aria-hidden="true">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">예적금</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">입출금통장</a>
                     </li>
@@ -135,9 +134,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">대출</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">대출</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">비상금대출</a>
                     </li>
@@ -161,9 +160,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">서비스</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">서비스</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">내 신용정보</a>
                     </li>
@@ -184,9 +183,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">제휴서비스</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">제휴서비스</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link"
                         >증권사 주식계좌</a
@@ -199,9 +198,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">mini</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">mini</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link"
                         >카카오뱅크 mini</a
@@ -222,10 +221,10 @@
               >
                 고객센터
               </button>
-              <div class="gnb__depth2__submenu" id="gnb3" aria-hidden="true">
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">이용안내</a>
-                  <ul class="gnb__depth2">
+              <div class="gnb__depth2" id="gnb3" aria-hidden="true">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">이용안내</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link"
                         >자주 묻는 질문</a
@@ -250,9 +249,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">상담하기</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">상담하기</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">고객의 소리</a>
                     </li>
@@ -261,9 +260,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">소비자보호</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">소비자보호</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link"
                         >소비자보호체계</a
@@ -300,9 +299,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">증명서</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">증명서</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link"
                         >나의 증명서 발급내역</a
@@ -315,9 +314,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="gnb__depth2__sublist">
-                  <a href="#none">약관 ・ 서식</a>
-                  <ul class="gnb__depth2">
+                <div class="gnb__depth2__submenu">
+                  <a href="#none" class="gnb__depth2__subtitle">약관 ・ 서식</a>
+                  <ul class="gnb__depth2__sublist">
                     <li class="gnb__depth2__list">
                       <a href="#none" class="gnb__depth2__link">약관</a>
                     </li>
@@ -523,7 +522,7 @@
   </main>
   <footer class="footer">
       <div class="footer__inner">
-        <h2 class="a11yHidden">서비스 이용정보</h2>
+        <h2 class="a11y-hidden">서비스 이용정보</h2>
         <ul class="guide-list">
           <li>
             <a href="#none" class="guide-link">모바일뱅킹 서비스 이용약관</a>
@@ -562,9 +561,9 @@
           ><span>(해외 <a href="tel:0264203333">+82-2-6420-3333</a>)</span>
         </address>
         <small class="copyright"
-          >Copyright &copy KakaoBank Corp. All rights reserved.</small
+          >Copyright &copy; KakaoBank Corp. All rights reserved.</small
         >
-        <h2 class="a11yHidden">카카오뱅크 공식채널 바로가기</h2>
+        <h2 class="a11y-hidden">카카오뱅크 공식채널 바로가기</h2>
         <ul>
           <li>
             <a
@@ -609,15 +608,12 @@
         </ul>
         <a href="#none" class="weba11y-link"
           ><img
-            alt="과학기술정보통신부 web accessibility 마크(웹 접근성 품질인증 마크)"
+            alt="과학기술정보통신부 web accessibility 인증마크(웹 접근성 품질인증 마크)"
             class="weba11y-img"
             src="./images/img-webaccessibility@2x.png"
             title="국가 공인 인증기관 : 웹와치"
         /></a>
       </div>
-
-
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
