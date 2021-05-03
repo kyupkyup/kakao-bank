@@ -26,7 +26,7 @@
 }
 
 // 요소 박스의 크기 고정 ----------------------------------------------------------- /
-@mixin boxFixed($width: 740px, $paddingX: 0) {
+@mixin boxFixed($width: 1080px, $paddingX: 0) {
   width: $width;
   padding-left: $paddingX;
   padding-right: $paddingX;
