@@ -1,0 +1,141 @@
+// 아이콘 스타일 ------------------------------------------------------------------ /
+.icon{
+
+  // 아이콘 공통 -------------------------------------------------------------------- /
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+
+  // 아이콘 요소를 보이지 않도록 설정할 때
+  &None{
+    display: none;
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+  }
+
+  // 검색 ------------------------------------------------------------------------ /
+  &Search{
+    &::before{
+      background-image: url(../../images/icon-search.svg);
+    }
+  }
+
+  // 닫기 ------------------------------------------------------------------------ /
+  &Close{
+    &::before{
+      content: '×';
+    }
+  }
+
+  // 햄버거 -------------------------------------------------------------------- /
+  &Burger{
+    &::before{
+      background-image: url(../images/button-navigation.svg);
+    }
+  }
+
+  // 보기 -------------------------------------------------------------------- /
+  &Visible{
+    &::before{
+      background-image: url(../images/icon-visible.svg);
+    }
+  }
+
+  // 감추기 -------------------------------------------------------------------- /
+  &InVisible{
+    &::before{
+      background-image: url(../images/icon-invisible.svg);
+    }
+  }
+
+  // 체크박스 (Square 형) -------------------------------------------------------------------- /
+  &CheckedSquare{
+    &::before{
+      background-image: url(../images/icon-checked-square.svg);
+    }
+  }
+
+  // 체크박스 해제 (Square 형) -------------------------------------------------------------------- /
+  &UncheckedSquare{
+    &::before{
+      background-image: url(../images/icon-unchecked-square.svg);
+    }
+  }
+
+  // 체크 상태 (Circle 형) -------------------------------------------------------------------- /
+  &Checked{
+    &::before{
+      background-image: url(../images/icon-checked.svg);
+    }
+  }
+
+  // 오류 및 경고 상태 -------------------------------------------------------------------- /
+  &Warning{
+    &::before{
+      background-image: url(../images/icon-warning.svg);
+    }
+  }
+
+  // 화살표 (Up) ------------------------------------------------------------ /
+  &ArrowUp{
+    &::before{
+      background-image: url(../images/icon-arrow-up.svg);
+    }
+  }
+
+  // 화살표 (Down) ------------------------------------------------------------ /
+  &ArrowDown{
+    &::before{
+      background-image: url(../images/icon-arrow-down.svg);
+    }
+  }
+
+  // 화살표 (Rignt) ------------------------------------------------------------ /
+  &ArrowDarkBlue{
+    &::before{
+      background-image: url(../images/icon-arrow-darkblue.svg);
+    }
+  }
+
+  // 화살표 (Right) ------------------------------------------------------------ /
+  &ArrowWhite{
+    &::before{
+      background-image: url(../images/icon-arrow-white.svg);
+    }
+  }
+
+  // 로딩 (Loading) ------------------------------------------------------------ /
+  &Loading{
+    &::before{
+      animation: spinner 0.25s infinite;
+      background-image: url(../images/icon-arrow-loading.svg);
+    }
+  }
+
+  // 처음으로 가기 (GoToTop) ------------------------------------------------------------ /
+  &GoToTop{
+    position: fixed;
+    right: 30px;
+    bottom: 276px;
+    width: 50px;
+    height: 50px;
+
+    &::before{
+      background-image: url(../images/icon-go-to-top.svg);
+    }
+  }
+}
