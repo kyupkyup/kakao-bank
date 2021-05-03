@@ -4,7 +4,7 @@ svgSpritesControl.js
 dist
 build
 .vscode
-
+./css
 # Logs
 logs
 *.log
