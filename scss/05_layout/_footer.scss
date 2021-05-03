@@ -1,0 +1,100 @@
+// 푸터 시작 --------------------------------------------------------------------- /
+.footer {
+  background: $grayscaleBlack;
+  color: $grayscaleGray2;
+  font-size: rem(12px);
+  padding-bottom: 30px;
+
+  // 데스크탑 구분선 시작 --------------------------------------------------------------- /
+  @include desktop{
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid rgba($grayscaleGray3, 0.5);
+    }
+  }
+
+  // 헤더 inner (740px) ---------------------------------------------------------- /
+  &__inner{
+    @include flexbox(column);
+    @include desktop{
+      @include boxFixed(768px, 14px);
+    }
+  }
+
+  // 푸터 로고 --------------------------------------------------------------------- /
+  &__logo{
+    @include autoMargin;
+    @include mobile{
+      width: 160px;
+      height: 16px;
+      margin-top: 25px;
+    }
+    @include desktop{
+      width: 180px;
+      height: 18px;
+      margin-top: 30px;
+    }
+  }
+}
+
+// 개인정보 ------------------------------------------------------------------- /
+.privacy {
+  order: -1;
+  @include mobile{
+    padding: 10px 18px;
+    // 모바일 구분선의 경우 개인정보 목록 링크의 아래쪽 테두리 선으로 스타일 설정
+    border-bottom: 1px solid rgba($grayscaleGray3, 0.5);
+  }
+  @include desktop {
+    padding: 18px 0;
+  }
+  // 개인정보 목록 ----------------------------------------------------------------- /
+  &__list{
+    @include flexbox(row, center, center, wrap);
+  }
+  // 개인정보 목록 링크 ----------------------------------------------------------------- /
+  &__link{
+    @include focusVisible;
+    display: block;
+    padding: 2px 4px;
+    margin: 4px;
+  }
+}
+
+// 주소 ----------------------------------------------------------------- /
+.address {
+  text-align: center;
+  margin-top: 17px;
+  line-height: 1.6;
+
+  &__content {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 11px;
+    
+    &:first-child,
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+// 저작권 정보 -------------------------------------------------------------------- /
+.copyright {
+  text-align: center;
+  font-size: rem(11px);
+  line-height: 1.6;
+
+  @include mobile{
+    margin-top: 15px;
+  }
+  @include desktop{
+    margin-top: 20px;
+  }
+}
+// 푸터 종료 --------------------------------------------------------------------- /

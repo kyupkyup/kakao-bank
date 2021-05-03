@@ -1,0 +1,17 @@
+// .ediya 컨테이너 레이아웃 ---------------------------------------------------------- /
+.ediya{
+  min-height: 100vh;
+  @include flexbox(column, flex-start, stretch, nowrap);
+
+  .main{
+    // .main 영역이 .header와 .footer를 제외한 나머지 높이를 가지도록 설정
+    flex: 1 1 0;
+    // .main 내 자식 요소가 플렉스 아이템이 되도록 설정 (로그인 페이지의 full background를 위해)
+    @include flexbox(column);
+  }
+
+  .footer{
+    // .main 영역이 늘어나지 않더라도 .footer 영역이 항상 화면 하단에 배치되도록 설정
+    margin-top: auto;
+  }
+}

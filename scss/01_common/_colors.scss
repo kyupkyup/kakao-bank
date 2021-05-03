@@ -1,0 +1,62 @@
+// Initial ( 기본 색상 ) --------------------------------------------------------- /
+$white: #fff;
+$black: #000;
+
+// Primary ( 주요 색상 ) --------------------------------------------------------- /
+$primaryBlue: #24388d; 
+$primaryBlue2: #5b6aa9; 
+$primaryBlue3: #919bc6; 
+$primaryBlue4: #c8cde2; 
+$primaryBlue5: #213778;
+$primaryBlue6: #22437c;
+$primaryBlue7: #2c68ae; 
+$primaryBlue8: #263d83; 
+$primaryBlue9: #102457;
+
+// Secondary ( 보조 색상 ) ------------------------------------------------------- /
+$secondaryLightBlue: #bae5fb; 
+$secondaryLightBlue2: #cbebfc; 
+$secondaryLightBlue3: #dcf2fd; 
+$secondaryLightBlue4: #eef8fe;
+$secondaryLightBlue5: #72bde3;
+$secondaryLightBlue6: #a7d1e7;
+$secondaryViolet: #31287c;
+$secondaryViolet2: #645e9d;
+$secondaryViolet3: #9893bd;
+$secondaryViolet4: #cbc9de;
+
+// Accent ( 강조 색상 ) ---------------------------------------------------------- /
+$accentAmber: #d2c9b6;
+$accentAmber2: #ddd6c8;
+$accentAmber3: #e8e4da;
+$accentAmber4: #f4f1ed;
+$accentCream: #f4ca54;
+$accentCream2: #f7d77f;
+$accentCream3: #f9e4a9;
+$accentCream4: #fcf2d4;
+
+// Grayscale & Backgrounds ( 흑백 색상 ) ----------------------------------------- /
+$grayscaleWhite: #fefefe;
+$grayscaleSnow: #f5f5f5;
+$grayscaleBlack: #0f0f0f;
+$grayscaleBlack2: #14182c;
+$grayscaleBlack3: #202023;
+$grayscaleGray: #616161;
+$grayscaleGray2: #878787;
+$grayscaleGray3: #979797;
+$grayscaleGray4: #464646;
+$grayscaleGray5: #737373;
+
+$grayscaleDarkGray: rgba(20, 24, 44, 0.9);
+$grayscaleDarkGray2: hsla(225, 57%, 10%, 0.9);
+
+// Borders ( 보더 색상 ) --------------------------------------------------------- /
+$borderIceBerg: #d1eff1;
+$borderCasablanca: #f6b45a;
+$borderTumble: #dab57e;
+$borderSilver: #e0e0e0;
+
+// Gradients ( 그래디언트 색상 ) ---------------------------------------------------- /
+$gradientBlue: linear-gradient(137.4deg, $primaryBlue8 3.86%, $primaryBlue9 100%);
+$gradientCream: linear-gradient(222.97deg, $accentCream4 0%, $accentCream 96.7%);
+$gradientLightBlue: linear-gradient(139.57deg, $secondaryLightBlue4 2.58%, $secondaryLightBlue 93.13%);
