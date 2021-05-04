@@ -1,0 +1,231 @@
+.withdrawal {
+  @include mobile {
+    &__intro {
+      width: 100%;
+      height: auto;
+      background-color: $primaryGreen;
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+        padding-bottom: 20px;
+      }
+    }
+    &__inner {
+      width: 100%;
+      height: 200px;
+      font-size: 40px;
+      padding: 20px;
+      background-color: $primaryGreen;
+    }
+    &__title {
+      font-size: rem(16px);
+      color: white;
+      margin-bottom: 20px;
+    }
+    &__text {
+      display: block;
+      width: 200px;
+      font-size: rem(34px);
+      line-height: rem(42px);
+      color: white;
+    }
+
+    &__list {
+      width: 100%;
+      height: 100px;
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &__safebox,
+    &__friends,
+    &__security {
+      font-size: 13px;
+      color: white;
+      float: left;
+      width: 33%;
+      height: 100px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    &__safebox__img {
+      display: block;
+      width: 100px;
+      height: 80px;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -890px -500px;
+    }
+    &__friends__img {
+      width: 100px;
+      height: 80px;
+      display: block;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -1085px -500px;
+    }
+    &__security__img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 80px;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -990px -500px;
+    }
+
+    &__product1,
+    &__product2,
+    &__product3,
+    &__product4 {
+      &__inner {
+        width: 100%;
+        height: 500px;
+      }
+      &__title {
+        background-color: tomato;
+        font-size: em(25px);
+        padding: 0 em(48px) 0 em(10px);
+      }
+      &__text {
+        background-color: aqua;
+        font-size: em(14px);
+        line-height: em(24px);
+        color: $gray;
+        padding: 0 em(48px) 0 em(24px);
+      }
+    }
+    &__product1 {
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 100%;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 275px;
+        height: 384px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1060px -660px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 68px;
+        top: 35px;
+        width: 150px;
+        height: 274px;
+        z-index: 4;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1365px -660px;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 230px;
+        top: 35px;
+        width: 150px;
+        height: 274px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1520px -660px;
+      }
+    }
+
+    &__product5 {
+      &__inner {
+        position: relative;
+        background-color: #3e4459;
+      }
+      &__title {
+        text-align: center;
+
+        padding: 0 em(15px);
+        font-size: em(25px);
+        line-height: 34px;
+        color: white;
+      }
+      &__text {
+        text-align: center;
+        padding: em(15px) em(48px) em(30px);
+        font-size: em(12px);
+        line-height: 24px;
+        opacity: 0.6;
+        color: #eee;
+      }
+      &__image {
+        position: absolute;
+        left: 45%;
+      }
+      &__text-guitar {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: em(17px) em(15px) em(14px);
+        font-size: em(12px);
+        line-height: 20px;
+        background-color: $secondaryLightBlue3;
+        color: $grayscaleGray3;
+      }
+    }
+  }
+}
+
+.detail-info {
+  @include mobile {
+    &__inner {
+      width: 100%;
+      height: auto;
+    }
+    &__list {
+    }
+    &__list-information {
+    }
+    &__title {
+      display: block;
+      height: 60px;
+      padding: 20px;
+      background-color: white;
+    }
+    &__title:focus + &__content {
+      height: auto;
+      display: block;
+      padding: 20px;
+    }
+    &__content {
+      display: none;
+      & strong {
+        display: block;
+        height: 30px;
+      }
+      & strong:first-child {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+    }
+    &__inner-title {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+    }
+    &__inner-content {
+      font-size: em(14px);
+      line-height: em(22px);
+      margin-bottom: em(20px);
+
+      color: #666;
+    }
+    &__download {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+      float: right;
+    }
+  }
+}
