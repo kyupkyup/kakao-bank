@@ -523,6 +523,17 @@ template {
   margin: -1px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 html {
   font-size: 16px;
   overflow-y: visible;
@@ -846,6 +857,7 @@ button {
     background-image: url("../../images/css_sprites.png");
     background-position: -230px -100px;
     background-size: 840px 741px;
+    animation: 1s ease 0s 6 normal forwards running bounce;
   }
   .withdrawal__product2__image3 {
     z-index: 5;
@@ -860,16 +872,35 @@ button {
     background-size: 840px 741px;
   }
   .withdrawal__product2__image4 {
-    z-index: 6;
+    z-index: 2;
     position: absolute;
     display: block;
     padding: 15px;
-    font-weight: 700;
     left: 57px;
-    top: 230px;
+    top: 0px;
     width: 200px;
-    height: 112px;
+    height: 180px;
+    opacity: 0;
     background-color: #fede22;
+    animation: 1s ease 0s 6 normal forwards running bounce;
+  }
+  .withdrawal__product2__image4-text {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    font-weight: 700;
+    left: 77px;
+    top: 220px;
+  }
+  .withdrawal__product2__image5 {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0px;
+    width: 330px;
+    height: 106px;
+    background-color: #f7f7f7;
+    margin-left: -165px;
   }
   .withdrawal__product3__img-container {
     margin-left: auto;
@@ -887,50 +918,58 @@ button {
   .withdrawal__product3__image {
     position: absolute;
     display: block;
-    top: 20px;
-    left: 40px;
+    top: 0;
+    left: 0;
+    opacity: 0;
     width: 180px;
     height: 185px;
     z-index: 1;
     background-image: url("../../images/css_sprites.png");
     background-position: -180px -215px;
     background-size: 560px 494px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
   }
   .withdrawal__product3__image2 {
     position: absolute;
     display: block;
-    top: 140px;
-    left: 110px;
+    top: 190px;
+    left: 150px;
     width: 180px;
     height: 185px;
+    opacity: 0;
     z-index: 3;
     background-image: url("../../images/css_sprites.png");
     background-position: 0px -220px;
     background-size: 560px 494px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
   }
   .withdrawal__product3__image3 {
     z-index: 5;
     position: absolute;
     display: block;
-    left: 180px;
-    top: 55px;
+    left: 230px;
+    top: 0px;
     width: 130px;
     height: 130px;
+    opacity: 0;
     background-image: url("../../images/css_sprites.png");
     background-position: -150px -610px;
     background-size: 840px 741px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
   }
   .withdrawal__product3__image4 {
     z-index: 5;
     position: absolute;
     display: block;
-    left: 220px;
-    top: 145px;
+    left: 270px;
+    top: 195px;
     width: 130px;
     height: 130px;
+    opacity: 0;
     background-image: url("../../images/css_sprites.png");
     background-position: 0 -610px;
     background-size: 840px 741px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
   }
   .withdrawal__product4 {
     background-color: #f7f7f7;
@@ -1055,6 +1094,18 @@ button {
     display: block;
     height: 30px;
   }
+  .detail-info__content {
+    height: auto;
+    display: block;
+    padding: 20px;
+  }
+  .detail-info__content ol {
+    list-style: none;
+  }
+  .detail-info__content strong {
+    display: block;
+    height: 30px;
+  }
   .detail-info__content strong:first-child {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
@@ -1076,6 +1127,1036 @@ button {
     margin-bottom: 0.625em;
     float: right;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .withdrawal__intro {
+    width: 100%;
+    height: auto;
+    background-color: #35a67d;
+  }
+  .withdrawal__intro:after {
+    display: block;
+    content: "";
+    clear: both;
+    padding-bottom: 20px;
+  }
+  .withdrawal__inner {
+    width: 100%;
+    height: 200px;
+    font-size: 40px;
+    padding: 20px;
+    background-color: #35a67d;
+  }
+  .withdrawal__title {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .withdrawal__text {
+    display: block;
+    width: 200px;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+    color: white;
+  }
+  .withdrawal__list {
+    width: 100%;
+    height: 100px;
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .withdrawal__safebox, .withdrawal__friends, .withdrawal__security {
+    font-size: 13px;
+    color: white;
+    float: left;
+    width: 33%;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .withdrawal__safebox__img {
+    display: block;
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -890px -500px;
+  }
+  .withdrawal__friends__img {
+    width: 100px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1085px -500px;
+  }
+  .withdrawal__security__img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 80px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -990px -500px;
+  }
+  .withdrawal__product1__inner, .withdrawal__product2__inner, .withdrawal__product3__inner, .withdrawal__product4__inner {
+    width: 100%;
+    height: auto;
+  }
+  .withdrawal__product1__title, .withdrawal__product2__title, .withdrawal__product3__title, .withdrawal__product4__title {
+    font-size: 1.5625em;
+    padding: 0 3em 0 0.625em;
+    margin: 20px 0;
+  }
+  .withdrawal__product1__text, .withdrawal__product2__text, .withdrawal__product3__text, .withdrawal__product4__text {
+    font-size: 0.875em;
+    line-height: 1.5em;
+    color: #666;
+    padding: 0 3em 0 1.5em;
+  }
+  .withdrawal__product1__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .withdrawal__product1__image {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 275px;
+    height: 384px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1060px -660px;
+  }
+  .withdrawal__product1__image2 {
+    position: absolute;
+    display: block;
+    left: 68px;
+    top: 125px;
+    width: 150px;
+    height: 274px;
+    opacity: 0;
+    z-index: 4;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1365px -660px;
+    transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  }
+  .withdrawal__product1__image3 {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    left: 70px;
+    top: 35px;
+    width: 150px;
+    height: 274px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1520px -660px;
+    transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+  }
+  .withdrawal__product2 {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+  }
+  .withdrawal__product2__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .withdrawal__product2__image {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 40px;
+    width: 230px;
+    height: 340px;
+    z-index: 1;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0px 0px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product2__image2 {
+    position: absolute;
+    display: block;
+    left: 220px;
+    top: 80px;
+    width: 25px;
+    height: 300px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -230px -100px;
+    background-size: 840px 741px;
+    animation: 1s ease 0s 6 normal forwards running bounce;
+  }
+  .withdrawal__product2__image3 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 50px;
+    top: 65px;
+    width: 220px;
+    height: 150px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -230px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product2__image4 {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    padding: 15px;
+    left: 57px;
+    top: 0px;
+    width: 200px;
+    height: 180px;
+    opacity: 0;
+    background-color: #fede22;
+    animation: 1s ease 0s 6 normal forwards running bounce;
+  }
+  .withdrawal__product2__image4-text {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    font-weight: 700;
+    left: 77px;
+    top: 220px;
+  }
+  .withdrawal__product2__image5 {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0px;
+    width: 330px;
+    height: 106px;
+    background-color: #f7f7f7;
+    margin-left: -165px;
+  }
+  .withdrawal__product3__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 400px;
+    height: 350px;
+  }
+  .withdrawal__product3__title {
+    text-align: center;
+  }
+  .withdrawal__product3__text {
+    text-align: center;
+  }
+  .withdrawal__product3__image {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 180px;
+    height: 185px;
+    z-index: 1;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -180px -215px;
+    background-size: 560px 494px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+  }
+  .withdrawal__product3__image2 {
+    position: absolute;
+    display: block;
+    top: 190px;
+    left: 150px;
+    width: 180px;
+    height: 185px;
+    opacity: 0;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0px -220px;
+    background-size: 560px 494px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
+  }
+  .withdrawal__product3__image3 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 230px;
+    top: 0px;
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -150px -610px;
+    background-size: 840px 741px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+  }
+  .withdrawal__product3__image4 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 270px;
+    top: 195px;
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0 -610px;
+    background-size: 840px 741px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
+  }
+  .withdrawal__product4 {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+  }
+  .withdrawal__product4__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 310px;
+    height: 350px;
+  }
+  .withdrawal__product4__image {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 82px;
+    width: 150px;
+    height: 240px;
+    z-index: 5;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -450px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product4__image2 {
+    position: absolute;
+    display: block;
+    top: 60px;
+    left: 0px;
+    width: 120px;
+    height: 185px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -600px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product4__image3 {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    left: 195px;
+    top: 60px;
+    width: 120px;
+    height: 185px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -720px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product5__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #3e4459;
+    padding-bottom: 20px;
+  }
+  .withdrawal__product5__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    order: -1;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+  }
+  .withdrawal__product5__title {
+    text-align: center;
+    padding: 0 0.9375em;
+    font-size: 1.5625em;
+    line-height: 34px;
+    color: white;
+  }
+  .withdrawal__product5__text {
+    text-align: center;
+    padding: 0.9375em 3em 1.875em;
+    font-size: 0.75em;
+    line-height: 24px;
+    opacity: 0.6;
+    color: #eee;
+  }
+  .withdrawal__product5__image {
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 110px;
+    z-index: 5;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -280px -600px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product5__text-guitar {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 1.0625em 0.9375em 0.875em;
+    font-size: 0.75em;
+    line-height: 20px;
+    background-color: #3e4459;
+    color: #a5a7b2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .detail-info__inner {
+    width: 100%;
+    height: auto;
+  }
+  .detail-info__title {
+    display: block;
+    height: 60px;
+    padding: 20px;
+    background-color: white;
+  }
+  .detail-info__title:focus + .detail-info__content {
+    height: auto;
+    display: block;
+    padding: 20px;
+  }
+  .detail-info__content {
+    display: none;
+  }
+  .detail-info__content strong {
+    display: block;
+    height: 30px;
+  }
+  .detail-info__content {
+    height: auto;
+    display: block;
+    padding: 20px;
+  }
+  .detail-info__content ol {
+    list-style: none;
+  }
+  .detail-info__content strong {
+    display: block;
+    height: 30px;
+  }
+  .detail-info__content strong:first-child {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .detail-info__inner-title {
+    font-size: 0.9375em;
+    font-weight: 700;
+    margin-bottom: 0.625em;
+  }
+  .detail-info__inner-content {
+    font-size: 0.875em;
+    line-height: 1.375em;
+    margin-bottom: 1.25em;
+    color: #666;
+  }
+  .detail-info__download {
+    font-size: 0.9375em;
+    font-weight: 700;
+    margin-bottom: 0.625em;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .withdrawal__intro {
+    width: 100%;
+    height: auto;
+    background-color: #35a67d;
+  }
+  .withdrawal__intro:after {
+    display: block;
+    content: "";
+    clear: both;
+    padding-bottom: 20px;
+  }
+  .withdrawal__inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+    height: 500px;
+    font-size: 40px;
+    background-color: #35a67d;
+  }
+  .withdrawal__title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 3.125em;
+  }
+  .withdrawal__text {
+    display: block;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    line-height: 4.375rem;
+    font-size: 3.125rem;
+    color: white;
+    margin-bottom: 1.25em;
+  }
+  .withdrawal__list {
+    width: 100%;
+    height: 100px;
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .withdrawal__safebox, .withdrawal__friends, .withdrawal__security {
+    font-size: 13px;
+    color: white;
+    float: left;
+    width: 33%;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .withdrawal__safebox__img {
+    display: block;
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -890px -500px;
+  }
+  .withdrawal__friends__img {
+    width: 100px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1085px -500px;
+  }
+  .withdrawal__security__img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 80px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -990px -500px;
+  }
+  .withdrawal__product1__inner, .withdrawal__product2__inner, .withdrawal__product3__inner, .withdrawal__product4__inner {
+    width: 100%;
+    height: 500px;
+  }
+  .withdrawal__product1__title, .withdrawal__product2__title, .withdrawal__product3__title, .withdrawal__product4__title {
+    font-size: 2.5em;
+    padding: 0 3em 0 0.625em;
+    line-height: 1.3;
+    margin: 20px 0;
+  }
+  .withdrawal__product1__text, .withdrawal__product2__text, .withdrawal__product3__text, .withdrawal__product4__text {
+    font-size: 0.875em;
+    line-height: 1.5em;
+    color: #666;
+    padding: 0 3em 0 1.5em;
+  }
+  .withdrawal__product1__inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    box-sizing: border-box;
+  }
+  .withdrawal__product1__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 400px;
+    float: right;
+  }
+  .withdrawal__product1__title {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    width: 60%;
+  }
+  .withdrawal__product1__text {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    width: 50%;
+  }
+  .withdrawal__product1__image {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 275px;
+    height: 384px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1060px -660px;
+  }
+  .withdrawal__product1__image2 {
+    position: absolute;
+    display: block;
+    left: 68px;
+    top: 125px;
+    width: 150px;
+    height: 274px;
+    opacity: 0;
+    z-index: 4;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1365px -660px;
+    transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  }
+  .withdrawal__product1__image3 {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    left: 70px;
+    top: 35px;
+    width: 150px;
+    height: 274px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -1520px -660px;
+    transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+  }
+  .withdrawal__product2 {
+    background-color: #f7f7f7;
+  }
+  .withdrawal__product2__inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    box-sizing: border-box;
+  }
+  .withdrawal__product2__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 400px;
+    height: 400px;
+    float: left;
+  }
+  .withdrawal__product2__title {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    text-align: right;
+    width: 60%;
+  }
+  .withdrawal__product2__text {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 50%;
+  }
+  .withdrawal__product2__image {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 40px;
+    width: 230px;
+    height: 340px;
+    z-index: 1;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0px 0px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product2__image2 {
+    position: absolute;
+    display: block;
+    left: 220px;
+    top: 80px;
+    width: 25px;
+    height: 300px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -230px -100px;
+    background-size: 840px 741px;
+    animation: 1s ease 0s 6 normal forwards running bounce;
+  }
+  .withdrawal__product2__image3 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 50px;
+    top: 65px;
+    width: 220px;
+    height: 150px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -230px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product2__image4 {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    padding: 15px;
+    left: 57px;
+    top: 0px;
+    width: 200px;
+    height: 180px;
+    opacity: 0;
+    background-color: #fede22;
+    animation: 1s ease 0s 6 normal forwards running bounce;
+  }
+  .withdrawal__product2__image4-text {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    font-weight: 700;
+    left: 77px;
+    top: 220px;
+  }
+  .withdrawal__product2__image5 {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0px;
+    width: 330px;
+    height: 106px;
+    background-color: #f7f7f7;
+    margin-left: -165px;
+  }
+  .withdrawal__product3__inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    box-sizing: border-box;
+  }
+  .withdrawal__product3__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 400px;
+    height: 350px;
+    float: right;
+    top: 50px;
+  }
+  .withdrawal__product3__title {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    width: 60%;
+  }
+  .withdrawal__product3__text {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    width: 50%;
+  }
+  .withdrawal__product3__image {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 180px;
+    height: 185px;
+    z-index: 1;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -180px -215px;
+    background-size: 560px 494px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+  }
+  .withdrawal__product3__image2 {
+    position: absolute;
+    display: block;
+    top: 190px;
+    left: 150px;
+    width: 180px;
+    height: 185px;
+    opacity: 0;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0px -220px;
+    background-size: 560px 494px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
+  }
+  .withdrawal__product3__image3 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 230px;
+    top: 0px;
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -150px -610px;
+    background-size: 840px 741px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+  }
+  .withdrawal__product3__image4 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 270px;
+    top: 195px;
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0 -610px;
+    background-size: 840px 741px;
+    transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
+  }
+  .withdrawal__product4 {
+    background-color: #f7f7f7;
+  }
+  .withdrawal__product4__inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    box-sizing: border-box;
+  }
+  .withdrawal__product4__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 310px;
+    height: 350px;
+    margin-left: 100px;
+    top: 20%;
+    float: left;
+  }
+  .withdrawal__product4__title {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 250px;
+    text-align: left;
+    padding: 0;
+    width: 30%;
+  }
+  .withdrawal__product4__text {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    width: 50%;
+  }
+  .withdrawal__product4__image {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 82px;
+    width: 150px;
+    height: 240px;
+    z-index: 5;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -450px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product4__image2 {
+    position: absolute;
+    display: block;
+    top: 60px;
+    left: 0px;
+    width: 120px;
+    height: 185px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -600px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product4__image3 {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    left: 195px;
+    top: 60px;
+    width: 120px;
+    height: 185px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -720px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product5 {
+    background-color: #3e4459;
+  }
+  .withdrawal__product5__inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #3e4459;
+    padding-bottom: 20px;
+  }
+  .withdrawal__product5__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    order: -1;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+  }
+  .withdrawal__product5__title {
+    text-align: center;
+    padding: 0 0.9375em;
+    font-size: 1.5625em;
+    line-height: 34px;
+    color: white;
+  }
+  .withdrawal__product5__text {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 500px;
+    text-align: center;
+    padding: 0.9375em 3em 1.875em;
+    font-size: 0.75em;
+    line-height: 24px;
+    opacity: 0.6;
+    color: #eee;
+  }
+  .withdrawal__product5__image {
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 110px;
+    z-index: 5;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -280px -600px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product5__text-guitar {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 1.0625em 0.9375em 0.875em;
+    font-size: 0.75em;
+    line-height: 20px;
+    background-color: #3e4459;
+    color: #a5a7b2;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .detail-info__inner {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    height: auto;
+  }
+  .detail-info__list-information {
+    border-bottom: 1px solid #a5a7b2;
+  }
+  .detail-info__list-information:last-child {
+    border: none;
+  }
+  .detail-info__title {
+    display: block;
+    height: 60px;
+    padding: 20px;
+    background-color: white;
+    transition: all 1s;
+  }
+  .detail-info__title:focus + .detail-info__content {
+    height: auto;
+    display: block;
+    padding: 20px;
+  }
+  .detail-info__content {
+    display: none;
+  }
+  .detail-info__content strong {
+    display: block;
+    height: 30px;
+  }
+  .detail-info__content {
+    height: auto;
+    display: block;
+    padding: 20px;
+    background-color: #f4f4f4;
+    transition: all 1s;
+  }
+  .detail-info__content ol {
+    list-style: none;
+  }
+  .detail-info__content strong {
+    display: block;
+    height: 30px;
+  }
+  .detail-info__content strong:first-child {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .detail-info__inner-title {
+    font-size: 0.9375em;
+    font-weight: 700;
+    margin-bottom: 0.625em;
+  }
+  .detail-info__inner-content {
+    font-size: 0.875em;
+    line-height: 1.375em;
+    margin-bottom: 1.25em;
+    color: #666;
+  }
+  .detail-info__download {
+    font-size: 0.9375em;
+    font-weight: 700;
+    margin-bottom: 0.625em;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .recommendation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    height: 600px;
+    margin-top: 100px;
+  }
+  .recommendation__header {
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+  }
+  .recommendation__btn-list {
+    margin-top: 20px;
+  }
+  .recommendation__btn-list li {
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 112px;
+    padding: 20px 12px 12px 20px;
+    border-radius: 2px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff;
+    float: left;
+    margin-top: 5px;
+  }
+  .recommendation__btn-list li:nth-child(-n+5) {
+    background-color: #35a67d;
+    margin-right: 5px;
+  }
+  .recommendation__btn-list li:nth-child(n+6) {
+    background-color: #005a96;
+    margin-right: 5px;
+  }
+}
+
+.is--invalid {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
