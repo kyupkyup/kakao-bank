@@ -756,15 +756,14 @@ button {
   }
   .withdrawal__product1__inner, .withdrawal__product2__inner, .withdrawal__product3__inner, .withdrawal__product4__inner {
     width: 100%;
-    height: 500px;
+    height: auto;
   }
   .withdrawal__product1__title, .withdrawal__product2__title, .withdrawal__product3__title, .withdrawal__product4__title {
-    background-color: tomato;
     font-size: 1.5625em;
     padding: 0 3em 0 0.625em;
+    margin: 20px 0;
   }
   .withdrawal__product1__text, .withdrawal__product2__text, .withdrawal__product3__text, .withdrawal__product4__text {
-    background-color: aqua;
     font-size: 0.875em;
     line-height: 1.5em;
     color: #666;
@@ -775,7 +774,7 @@ button {
     margin-right: auto;
     position: relative;
     width: 400px;
-    height: 100%;
+    height: 400px;
   }
   .withdrawal__product1__image {
     position: absolute;
@@ -791,27 +790,210 @@ button {
     position: absolute;
     display: block;
     left: 68px;
-    top: 35px;
+    top: 125px;
     width: 150px;
     height: 274px;
+    opacity: 0;
     z-index: 4;
     background-image: url("../../images/css_sprites.png");
     background-position: -1365px -660px;
+    transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   }
   .withdrawal__product1__image3 {
-    z-index: 5;
+    z-index: 1;
     position: absolute;
     display: block;
-    left: 230px;
+    opacity: 0;
+    left: 70px;
     top: 35px;
     width: 150px;
     height: 274px;
     background-image: url("../../images/css_sprites.png");
     background-position: -1520px -660px;
+    transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+  }
+  .withdrawal__product2 {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+  }
+  .withdrawal__product2__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .withdrawal__product2__image {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 40px;
+    width: 230px;
+    height: 340px;
+    z-index: 1;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0px 0px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product2__image2 {
+    position: absolute;
+    display: block;
+    left: 220px;
+    top: 80px;
+    width: 25px;
+    height: 300px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -230px -100px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product2__image3 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 50px;
+    top: 65px;
+    width: 220px;
+    height: 150px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -230px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product2__image4 {
+    z-index: 6;
+    position: absolute;
+    display: block;
+    padding: 15px;
+    font-weight: 700;
+    left: 57px;
+    top: 230px;
+    width: 200px;
+    height: 112px;
+    background-color: #fede22;
+  }
+  .withdrawal__product3__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 400px;
+    height: 350px;
+  }
+  .withdrawal__product3__title {
+    text-align: center;
+  }
+  .withdrawal__product3__text {
+    text-align: center;
+  }
+  .withdrawal__product3__image {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 40px;
+    width: 180px;
+    height: 185px;
+    z-index: 1;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -180px -215px;
+    background-size: 560px 494px;
+  }
+  .withdrawal__product3__image2 {
+    position: absolute;
+    display: block;
+    top: 140px;
+    left: 110px;
+    width: 180px;
+    height: 185px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0px -220px;
+    background-size: 560px 494px;
+  }
+  .withdrawal__product3__image3 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 180px;
+    top: 55px;
+    width: 130px;
+    height: 130px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -150px -610px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product3__image4 {
+    z-index: 5;
+    position: absolute;
+    display: block;
+    left: 220px;
+    top: 145px;
+    width: 130px;
+    height: 130px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: 0 -610px;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product4 {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+  }
+  .withdrawal__product4__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 310px;
+    height: 350px;
+  }
+  .withdrawal__product4__image {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 82px;
+    width: 150px;
+    height: 240px;
+    z-index: 5;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -450px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product4__image2 {
+    position: absolute;
+    display: block;
+    top: 60px;
+    left: 0px;
+    width: 120px;
+    height: 185px;
+    z-index: 3;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -600px 0;
+    background-size: 840px 741px;
+  }
+  .withdrawal__product4__image3 {
+    z-index: 3;
+    position: absolute;
+    display: block;
+    left: 195px;
+    top: 60px;
+    width: 120px;
+    height: 185px;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -720px 0;
+    background-size: 840px 741px;
   }
   .withdrawal__product5__inner {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #3e4459;
+    padding-bottom: 20px;
+  }
+  .withdrawal__product5__img-container {
+    margin-left: auto;
+    margin-right: auto;
+    order: -1;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
   }
   .withdrawal__product5__title {
     text-align: center;
@@ -830,7 +1012,13 @@ button {
   }
   .withdrawal__product5__image {
     position: absolute;
-    left: 45%;
+    display: block;
+    width: 110px;
+    height: 110px;
+    z-index: 5;
+    background-image: url("../../images/css_sprites.png");
+    background-position: -280px -600px;
+    background-size: 840px 741px;
   }
   .withdrawal__product5__text-guitar {
     display: block;

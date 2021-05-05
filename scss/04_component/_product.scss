@@ -81,15 +81,14 @@
     &__product4 {
       &__inner {
         width: 100%;
-        height: 500px;
+        height: auto;
       }
       &__title {
-        background-color: tomato;
         font-size: em(25px);
         padding: 0 em(48px) 0 em(10px);
+        margin: 20px 0;
       }
       &__text {
-        background-color: aqua;
         font-size: em(14px);
         line-height: em(24px);
         color: $gray;
@@ -101,8 +100,9 @@
         @include autoMargin;
         position: relative;
         width: 400px;
-        height: 100%;
+        height: 400px;
       }
+
       &__image {
         position: absolute;
         display: block;
@@ -117,31 +117,215 @@
         position: absolute;
         display: block;
         left: 68px;
-        top: 35px;
+        top: 125px;
         width: 150px;
         height: 274px;
-        z-index: 4;
+        opacity: 0;
 
+        z-index: 4;
         background-image: url('../../images/css_sprites.png');
         background-position: -1365px -660px;
+        transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
       }
       &__image3 {
-        z-index: 5;
+        z-index: 1;
         position: absolute;
         display: block;
-        left: 230px;
+        opacity: 0;
+        left: 70px;
         top: 35px;
         width: 150px;
         height: 274px;
         background-image: url('../../images/css_sprites.png');
         background-position: -1520px -660px;
+        transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+      }
+    }
+    &__product2 {
+      background-color: $grayscaleGray;
+      padding-top: 20px;
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 40px;
+        width: 230px;
+        height: 340px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -0px;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 220px;
+        top: 80px;
+        width: 25px;
+        height: 300px;
+        z-index: 3;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px -100px;
+        background-size: 840px 741px;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 50px;
+        top: 65px;
+        width: 220px;
+        height: 150px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px 0;
+        background-size: 840px 741px;
+      }
+      &__image4 {
+        z-index: 6;
+        position: absolute;
+        display: block;
+        padding: 15px;
+        font-weight: 700;
+        left: 57px;
+        top: 230px;
+        width: 200px;
+        height: 112px;
+        background-color: $primaryYellow;
       }
     }
 
+    &__product3 {
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 350px;
+      }
+      &__title {
+        text-align: center;
+      }
+      &__text {
+        text-align: center;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 40px;
+        width: 180px;
+        height: 185px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -180px -215px;
+        background-size: 560px 494px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 140px;
+        left: 110px;
+        width: 180px;
+        height: 185px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -220px;
+        background-size: 560px 494px;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 180px;
+        top: 55px;
+        width: 130px;
+        height: 130px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -150px -610px;
+        background-size: 840px 741px;
+      }
+      &__image4 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 220px;
+        top: 145px;
+        width: 130px;
+        height: 130px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: 0 -610px;
+        background-size: 840px 741px;
+      }
+    }
+    &__product4 {
+      background-color: $grayscaleGray;
+      padding-top: 20px;
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 310px;
+        height: 350px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 82px;
+        width: 150px;
+        height: 240px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -450px 0;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 60px;
+        left: 0px;
+        width: 120px;
+        height: 185px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -600px 0;
+        background-size: 840px 741px;
+      }
+      &__image3 {
+        z-index: 3;
+        position: absolute;
+        display: block;
+        left: 195px;
+        top: 60px;
+        width: 120px;
+        height: 185px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -720px 0;
+        background-size: 840px 741px;
+      }
+    }
     &__product5 {
       &__inner {
+        display: flex;
+        flex-direction: column;
         position: relative;
         background-color: #3e4459;
+        padding-bottom: 20px;
+      }
+      &__img-container {
+        @include autoMargin;
+        order: -1;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
       }
       &__title {
         text-align: center;
@@ -161,7 +345,13 @@
       }
       &__image {
         position: absolute;
-        left: 45%;
+        display: block;
+        width: 110px;
+        height: 110px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -280px -600px;
+        background-size: 840px 741px;
       }
       &__text-guitar {
         display: block;
