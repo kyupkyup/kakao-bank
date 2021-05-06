@@ -4,7 +4,7 @@
 
 .event {
   &__inner {
-    padding: em(30) em(20);
+    padding: 0 em(20) em(30);
 
     @include desktop {
       @include boxFixed;
@@ -26,7 +26,11 @@
   }
 
   &__list {
-    display: flow-root;
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
 
     @include tablet {
       @include autoMargin;
@@ -55,6 +59,7 @@
       margin-right: em(25);
     }
   }
+
   @include tablet {
     width: 100%;
     margin-bottom: em(20);
@@ -76,8 +81,11 @@
 }
 
 .event__details {
-  border: 2px solid gold;
   margin-bottom: em(20);
+  padding: em(10);
+  border-radius: em(10);
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 
   @include tablet {
     &:nth-child(odd) {
@@ -102,6 +110,7 @@
     font-size: rem(12);
     line-height: 1.5;
     margin-top: em(10);
+    padding-left: em(10);
   }
 
   &__title {
@@ -109,6 +118,7 @@
     line-height: 1.5;
     font-weight: 400;
     font-size: rem(15);
+    padding-left: em(10);
   }
 
   &__period {
@@ -117,5 +127,6 @@
     line-height: 1.5;
     margin-bottom: em(10);
     color: $grayscaleGray2;
+    padding-left: em(10);
   }
 }
