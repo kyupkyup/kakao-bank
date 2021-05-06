@@ -18,7 +18,6 @@ body *::after {
 // 탭 하이라이트 색상 설정 ------------------------------------------------------------- /
 body * {
   $highlightColor: #ffffc8;
-  box-sizing: border-box;
 
   -webkit-tap-highlight-color: rgba($highlightColor, 0.3);
   tap-highlight-color: rgba($highlightColor, 0.3);
@@ -39,6 +38,10 @@ body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: inherit;
   background-color: $white;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 // 제목 글자 크기 및 굵기 재지정 --------------------------------------------------------- /
@@ -94,4 +97,11 @@ button {
   padding: 0;
   border: 0;
   background-color: transparent;
+}
+
+// pc 에서만 보이는 요소 설정
+.pc-only {
+  @include mobile {
+    display: none !important;
+  }
 }

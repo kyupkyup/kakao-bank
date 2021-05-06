@@ -403,33 +403,50 @@
     &__inner {
       width: 100%;
       height: auto;
+      border-top: 1px solid $grayscaleGray2;
+      border-bottom: 1px solid $grayscaleGray2;
     }
     &__list {
     }
     &__list-information {
+      border-bottom: 1px solid $grayscaleGray3;
+    }
+    &__list-information.is-open {
+      .detail-info__content {
+        display: block;
+        height: auto;
+        padding: 20px;
+        background-color: $grayscaleGray4;
+        transition: all 1s;
+      }
+      .detail-info__title::before {
+        display: none;
+      }
+      .detail-info__title::after {
+        transform: rotate(45deg);
+      }
     }
     &__title {
       display: block;
       height: 60px;
       padding: 20px;
       background-color: white;
+      position: relative;
     }
-    &__title:focus + &__content {
-      height: auto;
-      display: block;
-      padding: 20px;
+    &__title::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: em(30);
+      margin-top: -4px;
+      width: 9px;
+      height: 9px;
+      border-top: 1px solid #333;
+      border-left: 1px solid #333;
+      transform: rotate(225deg);
     }
     &__content {
       display: none;
-      & strong {
-        display: block;
-        height: 30px;
-      }
-    }
-    &__content {
-      height: auto;
-      display: block;
-      padding: 20px;
       & ol {
         list-style: none;
       }
@@ -865,35 +882,52 @@
 .detail-info {
   @include tablet {
     &__inner {
+      border-top: 1px solid $grayscaleGray2;
+      border-bottom: 1px solid $grayscaleGray2;
       width: 100%;
       height: auto;
     }
     &__list {
     }
     &__list-information {
+      border-bottom: 1px solid $grayscaleGray3;
+    }
+    &__list-information.is-open {
+      .detail-info__content {
+        display: block;
+        height: auto;
+        padding: 20px;
+        background-color: $grayscaleGray4;
+        transition: all 1s;
+      }
+      .detail-info__title::before {
+        display: none;
+      }
+      .detail-info__title::after {
+        transform: rotate(45deg);
+      }
     }
     &__title {
+      position: relative;
       display: block;
       height: 60px;
       padding: 20px;
       background-color: white;
     }
-    &__title:focus + &__content {
-      height: auto;
-      display: block;
-      padding: 20px;
+    &__title::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: em(30);
+      margin-top: -4px;
+      width: 9px;
+      height: 9px;
+      border-top: 1px solid #333;
+      border-left: 1px solid #333;
+      transform: rotate(225deg);
     }
     &__content {
       display: none;
-      & strong {
-        display: block;
-        height: 30px;
-      }
-    }
-    &__content {
-      height: auto;
-      display: block;
-      padding: 20px;
       & ol {
         list-style: none;
       }
@@ -926,6 +960,7 @@
     }
   }
 }
+
 .withdrawal {
   @include desktop {
     &__intro {
@@ -941,7 +976,7 @@
     }
     &__inner {
       @include autoMargin;
-      width: 520px;
+      width: 1080px;
       height: 500px;
       font-size: 40px;
       background-color: $primaryGreen;
@@ -954,10 +989,11 @@
       padding-top: em(50px);
     }
     &__text {
+      @include autoMargin;
       display: block;
+      width: 45%;
       font-weight: 300;
       text-align: center;
-      width: 100%;
       line-height: rem(70px);
       font-size: rem(50px);
       color: white;
@@ -965,7 +1001,8 @@
     }
 
     &__list {
-      width: 100%;
+      @include autoMargin;
+      width: 70%;
       height: 100px;
       content: '';
       display: block;
@@ -1442,31 +1479,45 @@
     &__list-information:last-child {
       border: none;
     }
+    &__list-information.is-open {
+      .detail-info__content {
+        display: block;
+        height: auto;
+        padding: 20px;
+        background-color: $grayscaleGray4;
+        transition: all 1s;
+      }
+      .detail-info__title::before {
+        display: none;
+      }
+      .detail-info__title::after {
+        transform: rotate(45deg);
+      }
+    }
     &__title {
+      position: relative;
       display: block;
       height: 60px;
       padding: 20px;
       background-color: white;
       transition: all 1s;
     }
-    &__title:focus + &__content {
-      height: auto;
-      display: block;
-      padding: 20px;
+    &__title::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: em(30);
+      margin-top: -4px;
+      width: 9px;
+      height: 9px;
+      border-top: 1px solid #333;
+      border-left: 1px solid #333;
+      transform: rotate(225deg);
     }
+
     &__content {
       display: none;
-      & strong {
-        display: block;
-        height: 30px;
-      }
-    }
-    &__content {
-      height: auto;
-      display: block;
-      padding: 20px;
-      background-color: $grayscaleGray4;
-      transition: all 1s;
+
       & ol {
         list-style: none;
       }
@@ -1501,23 +1552,33 @@
 }
 
 .recommendation {
-  @include desktop {
+  @include mobile {
     @include autoMargin;
-    width: 1080px;
-    height: 600px;
+    width: 100%;
+    height: 500px;
     margin-top: 100px;
     &__header {
       font-size: 22px;
       color: #000;
       text-align: center;
     }
-    &__btn-list {
+    &__inner {
+      @include autoMargin;
+      width: 95%;
+      height: 100%;
+      display: block;
       margin-top: 20px;
+    }
+    &__btn-list {
+      @include autoMargin;
+
+      margin-top: 20px;
+
       & li {
         display: block;
         position: relative;
-        width: 175px;
-        height: 112px;
+        width: 48%;
+        height: auto;
         padding: 20px 12px 12px 20px;
         border-radius: 2px;
         font-size: 17px;
@@ -1536,7 +1597,182 @@
       }
     }
   }
+  @include tablet {
+    @include autoMargin;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    &__inner {
+      @include autoMargin;
+      width: 80%;
+    }
+    &__header {
+      font-size: 22px;
+      color: #000;
+      text-align: center;
+    }
+    &__btn-list {
+      margin-top: 20px;
+      &__img {
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 3px;
+        width: 60px;
+        height: 60px;
+
+        background-image: url('../../images/icon-sprite.png');
+      }
+
+      & li {
+        display: block;
+        position: relative;
+        width: 32%;
+        height: 112px;
+        padding: 20px 12px 12px 20px;
+        border-radius: 2px;
+        font-size: 17px;
+        line-height: 20px;
+        color: #fff;
+        float: left;
+        margin-top: 5px;
+      }
+      & li:nth-child(1) a span {
+        background-position: -115px -0px;
+      }
+      & li:nth-child(2) a span {
+        background-position: -170px 0px;
+      }
+      & li:nth-child(3) a span {
+        background-position: -230px 0px;
+      }
+      & li:nth-child(4) a span {
+        background-position: -115px -60px;
+      }
+      & li:nth-child(5) a span {
+        background-position: -170px -60px;
+      }
+      & li:nth-child(6) a span {
+        background-position: -230px -60px;
+      }
+      & li:nth-child(7) a span {
+        background-position: -115px -120px;
+      }
+      & li:nth-child(8) a span {
+        background-position: -170px 0px;
+      }
+      & li:nth-child(9) a span {
+        background-position: -230px 0px;
+      }
+
+      & li:nth-child(-n + 5) {
+        background-color: $primaryGreen;
+        margin-right: 5px;
+      }
+      & li:nth-child(n + 6) {
+        background-color: $secondaryLightBlue;
+        margin-right: 5px;
+      }
+    }
+  }
+  @include desktop {
+    @include autoMargin;
+    width: 1080px;
+    height: 400px;
+    margin-top: 100px;
+    &__inner {
+      width: 100%;
+    }
+    &__header {
+      font-size: 22px;
+      color: #000;
+      text-align: center;
+    }
+    &__btn-list {
+      margin-top: 20px;
+      &__img {
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 3px;
+        width: 60px;
+        height: 60px;
+
+        background-image: url('../../images/icon-sprite.png');
+      }
+      & li {
+        display: block;
+        position: relative;
+        width: 175px;
+        height: 112px;
+        padding: 20px 12px 12px 20px;
+        border-radius: 2px;
+        font-size: 17px;
+        line-height: 20px;
+        color: #fff;
+        float: left;
+        margin-top: 5px;
+      }
+      & li:nth-child(1) a span {
+        background-position: -115px -0px;
+      }
+      & li:nth-child(2) a span {
+        background-position: -170px 0px;
+      }
+      & li:nth-child(3) a span {
+        background-position: -230px 0px;
+      }
+      & li:nth-child(4) a span {
+        background-position: -115px -60px;
+      }
+      & li:nth-child(5) a span {
+        background-position: -170px -60px;
+      }
+      & li:nth-child(6) a span {
+        background-position: -230px -60px;
+      }
+      & li:nth-child(7) a span {
+        background-position: -115px -120px;
+      }
+      & li:nth-child(8) a span {
+        background-position: -170px 0px;
+      }
+      & li:nth-child(9) a span {
+        background-position: -230px 0px;
+      }
+      & li:nth-child(-n + 5) {
+        background-color: $primaryGreen;
+        margin-right: 5px;
+      }
+      & li:nth-child(n + 6) {
+        background-color: $secondaryLightBlue;
+        margin-right: 5px;
+      }
+    }
+  }
 }
 .is--invalid {
   display: none;
+}
+.deliberated {
+  text-align: right;
+  margin-bottom: 50px;
+  &__text {
+    @include mobile {
+      @include autoMargin;
+      display: block;
+      width: 90%;
+    }
+    @include tablet {
+      @include autoMargin;
+      display: block;
+      width: 80%;
+      padding-right: 20px;
+    }
+    @include desktop {
+      @include autoMargin;
+      display: block;
+      width: 1080px;
+    }
+  }
 }
