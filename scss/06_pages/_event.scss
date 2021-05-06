@@ -48,6 +48,7 @@
 
   li {
     cursor: pointer;
+    @include focusVisible();
   }
 
   [aria-selected='true'] {
