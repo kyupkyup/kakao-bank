@@ -1060,8 +1060,7 @@ button {
     padding: 0.9375em 3em 1.875em;
     font-size: 0.75em;
     line-height: 24px;
-    opacity: 0.6;
-    color: #eee;
+    color: #c0c0c0;
   }
   .withdrawal__product5__image {
     position: absolute;

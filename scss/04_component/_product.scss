@@ -374,8 +374,7 @@
         padding: em(15px) em(48px) em(30px);
         font-size: em(12px);
         line-height: 24px;
-        opacity: 0.6;
-        color: #eee;
+        color: $grayscaleGray3;
       }
       &__image {
         position: absolute;
