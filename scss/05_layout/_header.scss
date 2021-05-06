@@ -9,8 +9,13 @@
   background: transparent;
   transition: background 0.3s;
 
+  .body-event & {
+    background: #fff;
+  }
+
   &.is-active,
-  &.is-scroll {
+  &.is-scroll,
+  &.is-clicked {
     background: #fff;
   }
 

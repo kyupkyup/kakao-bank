@@ -8,7 +8,7 @@ gnbBurgerBtn.addEventListener('click', function () {
   gnbBurgerBtn.classList.toggle('is-open');
   globalNavBar.classList.toggle('is-open');
   document.body.classList.toggle('no-scroll');
-  header.classList.toggle('is-active');
+  header.classList.toggle('is-clicked');
 
   // label 변경
   if (gnbBurgerBtn.classList.contains('is-open')) {
