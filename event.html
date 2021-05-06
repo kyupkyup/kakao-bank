@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>이벤트 | 카카오뱅크</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -288,21 +289,35 @@
   </header>
   <main class="main">
     <div class="event__inner">
-      <h2 class="event__title">이벤트</h2>
-      <ul class="tab-list" role="tablist">
-        <li id="ongoingTab" role="tab" aria-controls="ongoing" aria-selected="true" tabindex="0">진행중<span
-            class="desktop-text"> 이벤트</span></li>
-        <li id="finishedTab" role="tab" aria-controls="finished" aria-selected="false" tabindex="0">종료<span
-            class="desktop-text">된 이벤트</span></li>
-      </ul>
+      <div class="event__title__wrapper">
+        <h2 class="event__title">이벤트</h2>
+        <ul class="tab-list" role="tablist">
+          <li id="ongoingTab" role="tab" aria-controls="ongoing" aria-selected="true" tabindex="0">진행중<span
+              class="desktop-text"> 이벤트</span></li>
+          <li id="finishedTab" role="tab" aria-controls="finished" aria-selected="false" tabindex="0">종료<span
+              class="desktop-text">된 이벤트</span></li>
+        </ul>
+      </div>
       <section id="ongoing" role="tabpanel" aria-labelledby="ongoingTab">
         <h3 class="a11y-hidden">진행중 이벤트</h3>
         <ul class="event__list">
           <li class="event__details">
             <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
-              <img src="./images/event_current_1.png" alt="제휴 신용카드 5월 이벤트 최대 32만원 혜택 증정" />
+              <img class="responsiveImg" src="./images/event_current_0.png" alt="주식계좌 개설하고 다양한 혜택도 받으세요!" />
+              <strong class="event__details__title">증권사 주식계좌 개설 이벤트 (5~6월)</strong>
+              <em class="event__details__hashtag">#주식계좌 #개설혜택</em>
+              <span class="event__details__period">
+                <time datetime="2021-05-01">2021.05.01</time>
+                <span>~</span>
+                <time datetime="2021-06-30">2021.06.30</time>
+              </span>
+            </a>
+          </li>
+          <li class="event__details">
+            <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
+              <img class="responsiveImg" src="./images/event_current_1.png" alt="제휴 신용카드 5월 이벤트 최대 32만원 혜택 증정" />
               <strong class="event__details__title">제휴 신용카드 이용고객 대상 이벤트 (5월)</strong>
-              <em class="event_details__hashtag">#제휴신용카드 #혜택증정</em>
+              <em class="event__details__hashtag">#제휴신용카드 #혜택증정</em>
               <span class="event__details__period">
                 <time datetime="2021-04-30">2021.04.30</time>
                 <span>~</span>
@@ -312,9 +327,9 @@
           </li>
           <li class="event__details">
             <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
-              <img src="./images/event_current_2.png" alt="지금 가입하면 매일 100명에게 랜덤주식 1만원" />
+              <img class="responsiveImg" src="./images/event_current_2.png" alt="지금 가입하면 매일 100명에게 랜덤주식 1만원" />
               <strong class="event__details__title">한국투자증권 해외주식 투자 가입 이벤트</strong>
-              <em class="event_details__hashtag">#해외주식투자 #한국투자증권</em>
+              <em class="event__details__hashtag">#해외주식투자 #한국투자증권</em>
               <span class="event__details__period">
                 <time datetime="2021-04-01">2021.04.01</time>
                 <span>~</span>
@@ -324,9 +339,9 @@
           </li>
           <li class="event__details">
             <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
-              <img src="./images/event_current_3.png" alt="집콕 맞춤 혜택 카카오뱅크 프렌즈 체크카드 캐시백 프로모션 시즌 8" />
+              <img class="responsiveImg" src="./images/event_current_3.png" alt="집콕 맞춤 혜택 카카오뱅크 프렌즈 체크카드 캐시백 프로모션 시즌 8" />
               <strong class="event__details__title">카카오뱅크 프렌즈 체크카드 매월 33,000원의 추가 혜택</strong>
-              <em class="event_details__hashtag">#체크카드 #캐시백 #시즌8</em>
+              <em class="event__details__hashtag">#체크카드 #캐시백 #시즌8</em>
               <span class="event__details__period">
                 <time datetime="2021-02-01">2021.02.01</time>
                 <span>~</span>
@@ -341,9 +356,9 @@
         <ul class="event__list">
           <li class="event__details">
             <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
-              <img src="./images/event_end_1.png" alt="증권사 주식계좌 개설 이벤트 주식계좌 개설하고 다양한 혜택도 받으세요!" />
+              <img class="responsiveImg" src="./images/event_end_1.png" alt="증권사 주식계좌 개설 이벤트 주식계좌 개설하고 다양한 혜택도 받으세요!" />
               <strong class="event__details__title">증권사 주식계좌 개설 이벤트 (3~4월)</strong>
-              <em class="event_details__hashtag">#주식계좌 #개설혜택</em>
+              <em class="event__details__hashtag">#주식계좌 #개설혜택</em>
               <span class="event__details__period">
                 <time datetime="2021-03-01">2021.03.01</time>
                 <span>~</span>
@@ -353,9 +368,9 @@
           </li>
           <li class="event__details">
             <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
-              <img src="./images/event_end_2.png" alt="제휴 신용카드 4월 이벤트 최대 31만원 혜택" />
+              <img class="responsiveImg" src="./images/event_end_2.png" alt="제휴 신용카드 4월 이벤트 최대 31만원 혜택" />
               <strong class="event__details__title">제휴 신용카드 이용고객 대상 이벤트 (4월)</strong>
-              <em class="event_details__hashtag">#제휴신용카드 #혜택증정</em>
+              <em class="event__details__hashtag">#제휴신용카드 #혜택증정</em>
               <span class="event__details__period">
                 <time datetime="2021-03-31">2021.03.31</time>
                 <span>~</span>
@@ -365,9 +380,9 @@
           </li>
           <li class="event__details">
             <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
-              <img src="./images/event_end_3.png" alt="여기저기 흩어져있는 내 돈 가져오기" />
+              <img class="responsiveImg" src="./images/event_end_3.png" alt="여기저기 흩어져있는 내 돈 가져오기" />
               <strong class="event__details__title">여기저기 흩어져있는 내 돈 '가져오기' 이벤트</strong>
-              <em class="event_details__hashtag">#오픈뱅킹 #가져오기이벤트</em>
+              <em class="event__details__hashtag">#오픈뱅킹 #가져오기이벤트</em>
               <span class="event__details__period">
                 <time datetime="2021-03-11">2021.03.11</time>
                 <span>~</span>
@@ -377,9 +392,9 @@
           </li>
           <li class="event__details">
             <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
-              <img src="./images/event_end_4.png" alt="제휴 신용카드 3월 이벤트 최대 33만원 혜택" />
+              <img class="responsiveImg" src="./images/event_end_4.png" alt="제휴 신용카드 3월 이벤트 최대 33만원 혜택" />
               <strong class="event__details__title">제휴 신용카드 이용고객 대상 이벤트 (3월)</strong>
-              <em class="event_details__hashtag">#제휴신용카드 #혜택증정</em>
+              <em class="event__details__hashtag">#제휴신용카드 #혜택증정</em>
               <span class="event__details__period">
                 <time datetime="2021-02-26">2021.02.26</time>
                 <span>~</span>
@@ -387,10 +402,61 @@
               </span>
             </a>
           </li>
+          <li class="event__details">
+            <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
+              <img class="responsiveImg" src="./images/event_end_5.png" alt="주식계좌 최초 개설하면 즉시 5천원" />
+              <strong class="event__details__title">KB증권 주식계좌 개설하기 이벤트</strong>
+              <em class="event__details__hashtag">#주식계좌 #KB증권</em>
+              <span class="event__details__period">
+                <time datetime="2020-10-01">2020.10.01</time>
+                <span>~</span>
+                <time datetime="2021-02-28">2021.02.28</time>
+              </span>
+            </a>
+          </li>
+          <li class="event__details">
+            <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
+              <img class="responsiveImg" src="./images/event_end_6.png" alt="해외주식 투자 시작하고, 해외주식도 받으세요!" />
+              <strong class="event__details__title">한국투자증권 해외주식 투자 가입 이벤트</strong>
+              <em class="event__details__hashtag">#해외주식투자 #한국투자증권</em>
+              <span class="event__details__period">
+                <time datetime="2020-09-14">2020.09.14</time>
+                <span>~</span>
+                <time datetime="2021-02-28">2021.02.28</time>
+              </span>
+            </a>
+          </li>
+          <li class="event__details">
+            <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
+              <img class="responsiveImg" src="./images/event_end_7.png" alt="주식계좌 개설하면 국내/해외주식 증정" />
+              <strong class="event__details__title">한국투자증권 주식계좌 개설하기 이벤트</strong>
+              <em class="event__details__hashtag">#주식계좌 #한국투자증권</em>
+              <span class="event__details__period">
+                <time datetime="2020-09-14">2020.09.14</time>
+                <span>~</span>
+                <time datetime="2021-02-28">2021.02.28</time>
+              </span>
+            </a>
+          </li>
+          <li class="event__details">
+            <a href="#none" class="event__details__link" target="_blank" title="새 창 열림">
+              <img class="responsiveImg" src="./images/event_end_8.png" alt="주식계좌 개설하면 즉시 5천원 축하금" />
+              <strong class="event__details__title">NH투자증권 주식계좌 개설하기 이벤트</strong>
+              <em class="event__details__hashtag">#주식계좌 #NH투자증권</em>
+              <span class="event__details__period">
+                <time datetime="2020-05-01">2020.05.01</time>
+                <span>~</span>
+                <time datetime="2021-02-28">2021.02.28</time>
+              </span>
+            </a>
+          </li>
         </ul>
       </section>
     </div>
   </main>
+    <a href="#" class="buttonGoToTop" role="button" aria-label="처음으로 가기">
+      <span class="icon iconGoToTop"></span>
+    </a>
   <footer class="footer">
     <div class="footer__inner">
       <h2 class="a11y-hidden">서비스 이용정보</h2>
