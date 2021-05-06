@@ -124,6 +124,9 @@
     font-weight: 400;
     font-size: rem(15);
     padding-left: em(10);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__period {
