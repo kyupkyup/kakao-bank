@@ -102,6 +102,6 @@ button {
 // pc 에서만 보이는 요소 설정
 .pc-only {
   @include mobile {
-    display: none;
+    display: none !important;
   }
 }
