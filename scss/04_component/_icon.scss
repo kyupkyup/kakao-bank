@@ -133,6 +133,7 @@
     bottom: em(100);
     width: em(50);
     height: em(50);
+    z-index: 10;
 
     &::before{
       background-image: url(../images/icon-go-to-top.svg);

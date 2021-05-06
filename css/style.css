@@ -697,6 +697,7 @@ button {
   bottom: 6.25em;
   width: 3.125em;
   height: 3.125em;
+  z-index: 10;
 }
 .iconGoToTop::before {
   background-image: url(../images/icon-go-to-top.svg);
@@ -2414,6 +2415,21 @@ button {
 .responsiveImg {
   max-width: 100%;
   height: auto;
+  /* IE10+ */
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .responsiveImg {
+    height: 47.197640118%;
+  }
+}
+
+.main {
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    padding-top: 85px;
+  }
 }
 
 .header {
@@ -2930,7 +2946,7 @@ button {
 }
 
 .event__inner {
-  padding: 1.875em 1.25em;
+  padding: 0 1.25em 1.875em;
 }
 @media screen and (min-width: 1120px) {
   .event__inner {
@@ -2958,8 +2974,10 @@ button {
     display: none;
   }
 }
-.event__list {
-  display: flow-root;
+.event__list::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .event__list {
@@ -3013,8 +3031,11 @@ button {
 }
 
 .event__details {
-  border: 2px solid gold;
   margin-bottom: 1.25em;
+  padding: 0.625em;
+  border-radius: 0.625em;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 768px) {
   .event__details:nth-child(odd) {
@@ -3041,12 +3062,14 @@ button {
   font-size: 0.75rem;
   line-height: 1.5;
   margin-top: 0.625em;
+  padding-left: 0.625em;
 }
 .event__details__title {
   order: 1;
   line-height: 1.5;
   font-weight: 400;
   font-size: 0.9375rem;
+  padding-left: 0.625em;
 }
 .event__details__period {
   order: 2;
@@ -3054,6 +3077,7 @@ button {
   line-height: 1.5;
   margin-bottom: 0.625em;
   color: #888;
+  padding-left: 0.625em;
 }
 
 /*# sourceMappingURL=style.css.map */
