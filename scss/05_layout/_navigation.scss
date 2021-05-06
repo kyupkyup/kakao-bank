@@ -140,6 +140,15 @@
       text-align: center;
       @include focusVisible();
 
+      .body-index & {
+        color: #fff;
+      }
+
+      .body-index .header.is-active &,
+      .body-index .header.is-scroll & {
+        color: #000;
+      }
+
       &::after {
         display: none;
         content: '';
@@ -149,6 +158,15 @@
         bottom: -6px;
         width: calc(100% - 10px);
         height: 2px;
+        background: #000;
+      }
+
+      .body-index &::after {
+        background: #fff;
+      }
+
+      .body-index .header.is-active &::after,
+      .body-index .header.is-scroll &::after {
         background: #000;
       }
     }
@@ -167,6 +185,11 @@
       height: auto;
       border-radius: 24px;
       background: $primaryYellow;
+      color: $black !important;
+    }
+
+    &__depth1__btn.open-scraping::after {
+      display: none;
     }
 
     &__depth2-wrap {

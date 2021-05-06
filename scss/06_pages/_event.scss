@@ -1,5 +1,9 @@
-.main {
+.body-event .main {
+  padding-top: 60px;
   background: rgb(248, 248, 248);
+  @include tablet {
+    padding-top: 85px;
+  }
 }
 
 .event {
@@ -27,7 +31,7 @@
 
   &__list {
     &::after {
-      content: "";
+      content: '';
       clear: both;
       display: block;
     }
@@ -44,6 +48,7 @@
 
   li {
     cursor: pointer;
+    @include focusVisible();
   }
 
   [aria-selected='true'] {
@@ -119,6 +124,9 @@
     font-weight: 400;
     font-size: rem(15);
     padding-left: em(10);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__period {

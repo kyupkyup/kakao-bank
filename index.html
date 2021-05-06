@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>입출금통장 | 카카오뱅크</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/navigation.js" defer></script>
-    <script src="./js/index.js" defer></script>
-    </head>
-  <body>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body class="body-index">
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
@@ -134,12 +134,17 @@
                   aria-hidden="true"
                 >
                   <li class="gnb__depth2__submenu">
-                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-2-1"
+                    <a
+                      href="./index.html"
+                      class="gnb__depth2__subtitle"
+                      id="gnb2-2-1"
                       >예적금</a
                     >
                     <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-2-1">
                       <li class="gnb__depth2__list">
-                        <a href="#none" class="gnb__depth2__link">입출금통장</a>
+                        <a href="./index.html" class="gnb__depth2__link"
+                          >입출금통장</a
+                        >
                       </li>
                       <li class="gnb__depth2__list">
                         <a href="#none" class="gnb__depth2__link">모임통장</a>
@@ -489,7 +494,11 @@
             디자인은 내 맘대로 혜택은 누구에게나
           </h3>
           <p class="withdrawal__product4__text">
+<<<<<<< HEAD
             카카오프렌즈 케릭터 디자인 멋스러운 솔리드 디자인의 체크카드를
+=======
+            카카오프렌즈 캐릭터 디자인 멋스러운 솔리드 디자인의 체크카드를
+>>>>>>> c0ba24b8069caee341444c4e99b24d8544f92226
             취향에 따라 선택할 수 있습니다. 모든 프렌즈 체크카드는 디자인이
             달라도 혜택은 동일하게 제공됩니다.
           </p>
@@ -757,8 +766,12 @@
         >
       </section>
     </main>
-    <a href="#" class="buttonGoToTop" role="button" aria-label="처음으로 가기">
-      <span class="icon iconGoToTop"></span>
+    <a
+      href="#"
+      class="icon iconGoToTop"
+      role="button"
+      aria-label="처음으로 가기"
+    >
     </a>
     <footer class="footer">
       <div class="footer__inner">
@@ -796,7 +809,7 @@
         </ul>
         <address class="address">
           <span>대표전화 <a href="tel:15993333">1599-3333</a></span
-          ><span class="address__tel-abroad"></span>
+          ><span class="address__tel-abroad">
             (해외 <a href="tel:0264203333">+82-2-6420-3333</a>)</span
           >
         </address>
@@ -852,7 +865,8 @@
             class="weba11y__img"
             src="./images/img-webaccessibility@2x.png"
             title="국가 공인 인증기관 : 웹와치"
-        />웹 접근성 품질인증</a>
+          />웹 접근성 품질인증</a
+        >
       </div>
     </footer>
   </body>
