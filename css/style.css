@@ -649,7 +649,7 @@ button {
   background-size: 100% 100%;
 }
 .iconSearch::before {
-  background-image: url(../../images/icon-search.svg);
+  background-image: url(../images/icon-search.svg);
 }
 .iconClose::before {
   content: "×";
@@ -694,13 +694,14 @@ button {
 .iconGoToTop {
   position: fixed;
   right: 3.125em;
-  bottom: 6.25em;
   width: 3.125em;
   height: 3.125em;
+  bottom: 6.25em;
   z-index: 10;
 }
 .iconGoToTop::before {
   background-image: url(../images/icon-go-to-top.svg);
+  opacity: 0.5;
 }
 
 .main {
@@ -759,7 +760,7 @@ button {
     width: 100px;
     height: 80px;
     margin: 0 auto;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -890px -500px;
   }
   .withdrawal__friends__img {
@@ -767,7 +768,7 @@ button {
     height: 80px;
     display: block;
     margin: 0 auto;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1085px -500px;
   }
   .withdrawal__security__img {
@@ -775,7 +776,7 @@ button {
     margin: 0 auto;
     width: 100px;
     height: 80px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -990px -500px;
   }
   .withdrawal__product1__inner, .withdrawal__product2__inner, .withdrawal__product3__inner, .withdrawal__product4__inner {
@@ -807,7 +808,7 @@ button {
     width: 275px;
     height: 384px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1060px -660px;
   }
   .withdrawal__product1__image2 {
@@ -819,7 +820,7 @@ button {
     height: 274px;
     opacity: 0;
     z-index: 4;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1365px -660px;
     transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   }
@@ -832,7 +833,7 @@ button {
     top: 35px;
     width: 150px;
     height: 274px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1520px -660px;
     transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
   }
@@ -855,7 +856,7 @@ button {
     width: 230px;
     height: 340px;
     z-index: 1;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0px 0px;
     background-size: 840px 741px;
   }
@@ -867,7 +868,7 @@ button {
     width: 25px;
     height: 300px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -230px -100px;
     background-size: 840px 741px;
     animation: 1s ease 0s 6 normal forwards running bounce;
@@ -880,7 +881,7 @@ button {
     top: 65px;
     width: 220px;
     height: 150px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -230px 0;
     background-size: 840px 741px;
   }
@@ -937,7 +938,7 @@ button {
     width: 180px;
     height: 185px;
     z-index: 1;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -180px -215px;
     background-size: 560px 494px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
@@ -951,7 +952,7 @@ button {
     height: 185px;
     opacity: 0;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0px -220px;
     background-size: 560px 494px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
@@ -965,7 +966,7 @@ button {
     width: 130px;
     height: 130px;
     opacity: 0;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -150px -610px;
     background-size: 840px 741px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
@@ -979,7 +980,7 @@ button {
     width: 130px;
     height: 130px;
     opacity: 0;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0 -610px;
     background-size: 840px 741px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
@@ -1003,7 +1004,7 @@ button {
     width: 150px;
     height: 240px;
     z-index: 5;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -450px 0;
     background-size: 840px 741px;
   }
@@ -1015,7 +1016,7 @@ button {
     width: 120px;
     height: 185px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -600px 0;
     background-size: 840px 741px;
   }
@@ -1027,7 +1028,7 @@ button {
     top: 60px;
     width: 120px;
     height: 185px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -720px 0;
     background-size: 840px 741px;
   }
@@ -1068,7 +1069,7 @@ button {
     width: 110px;
     height: 110px;
     z-index: 5;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -280px -600px;
     background-size: 840px 741px;
   }
@@ -1088,7 +1089,7 @@ button {
   .detail-info__inner {
     width: 100%;
     height: auto;
-    border-top: 1px solid #888;
+    border-top: 1px solid #6e6e6e;
   }
   .detail-info__list-information {
     border-bottom: 1px solid #a5a7b2;
@@ -1210,7 +1211,7 @@ button {
     width: 100px;
     height: 80px;
     margin: 0 auto;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -890px -500px;
   }
   .withdrawal__friends__img {
@@ -1218,7 +1219,7 @@ button {
     height: 80px;
     display: block;
     margin: 0 auto;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1085px -500px;
   }
   .withdrawal__security__img {
@@ -1226,7 +1227,7 @@ button {
     margin: 0 auto;
     width: 100px;
     height: 80px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -990px -500px;
   }
   .withdrawal__product1__inner, .withdrawal__product2__inner, .withdrawal__product3__inner, .withdrawal__product4__inner {
@@ -1258,7 +1259,7 @@ button {
     width: 275px;
     height: 384px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1060px -660px;
   }
   .withdrawal__product1__image2 {
@@ -1270,7 +1271,7 @@ button {
     height: 274px;
     opacity: 0;
     z-index: 4;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1365px -660px;
     transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   }
@@ -1283,7 +1284,7 @@ button {
     top: 35px;
     width: 150px;
     height: 274px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1520px -660px;
     transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
   }
@@ -1306,7 +1307,7 @@ button {
     width: 230px;
     height: 340px;
     z-index: 1;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0px 0px;
     background-size: 840px 741px;
   }
@@ -1318,7 +1319,7 @@ button {
     width: 25px;
     height: 300px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -230px -100px;
     background-size: 840px 741px;
     animation: 1s ease 0s 6 normal forwards running bounce;
@@ -1331,7 +1332,7 @@ button {
     top: 65px;
     width: 220px;
     height: 150px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -230px 0;
     background-size: 840px 741px;
   }
@@ -1388,7 +1389,7 @@ button {
     width: 180px;
     height: 185px;
     z-index: 1;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -180px -215px;
     background-size: 560px 494px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
@@ -1402,7 +1403,7 @@ button {
     height: 185px;
     opacity: 0;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0px -220px;
     background-size: 560px 494px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
@@ -1416,7 +1417,7 @@ button {
     width: 130px;
     height: 130px;
     opacity: 0;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -150px -610px;
     background-size: 840px 741px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
@@ -1430,7 +1431,7 @@ button {
     width: 130px;
     height: 130px;
     opacity: 0;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0 -610px;
     background-size: 840px 741px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
@@ -1454,7 +1455,7 @@ button {
     width: 150px;
     height: 240px;
     z-index: 5;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -450px 0;
     background-size: 840px 741px;
   }
@@ -1466,7 +1467,7 @@ button {
     width: 120px;
     height: 185px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -600px 0;
     background-size: 840px 741px;
   }
@@ -1478,7 +1479,7 @@ button {
     top: 60px;
     width: 120px;
     height: 185px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -720px 0;
     background-size: 840px 741px;
   }
@@ -1519,7 +1520,7 @@ button {
     width: 110px;
     height: 110px;
     z-index: 5;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -280px -600px;
     background-size: 840px 741px;
   }
@@ -1537,7 +1538,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .detail-info__inner {
-    border-top: 1px solid #888;
+    border-top: 1px solid #6e6e6e;
     width: 100%;
     height: auto;
   }
@@ -1671,7 +1672,7 @@ button {
     width: 100px;
     height: 80px;
     margin: 0 auto;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -890px -500px;
   }
   .withdrawal__friends__img {
@@ -1679,7 +1680,7 @@ button {
     height: 80px;
     display: block;
     margin: 0 auto;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1085px -500px;
   }
   .withdrawal__security__img {
@@ -1687,7 +1688,7 @@ button {
     margin: 0 auto;
     width: 100px;
     height: 80px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -990px -500px;
   }
   .withdrawal__product1__inner, .withdrawal__product2__inner, .withdrawal__product3__inner, .withdrawal__product4__inner {
@@ -1741,7 +1742,7 @@ button {
     width: 275px;
     height: 384px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1060px -660px;
   }
   .withdrawal__product1__image2 {
@@ -1753,7 +1754,7 @@ button {
     height: 274px;
     opacity: 0;
     z-index: 4;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1365px -660px;
     transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   }
@@ -1766,7 +1767,7 @@ button {
     top: 35px;
     width: 150px;
     height: 274px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -1520px -660px;
     transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
   }
@@ -1813,7 +1814,7 @@ button {
     width: 230px;
     height: 340px;
     z-index: 1;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0px 0px;
     background-size: 840px 741px;
   }
@@ -1825,7 +1826,7 @@ button {
     width: 25px;
     height: 300px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -230px -100px;
     background-size: 840px 741px;
     animation: 1s ease 0s 6 normal forwards running bounce;
@@ -1838,7 +1839,7 @@ button {
     top: 65px;
     width: 220px;
     height: 150px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -230px 0;
     background-size: 840px 741px;
   }
@@ -1910,7 +1911,7 @@ button {
     width: 180px;
     height: 185px;
     z-index: 1;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -180px -215px;
     background-size: 560px 494px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
@@ -1924,7 +1925,7 @@ button {
     height: 185px;
     opacity: 0;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0px -220px;
     background-size: 560px 494px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
@@ -1938,7 +1939,7 @@ button {
     width: 130px;
     height: 130px;
     opacity: 0;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -150px -610px;
     background-size: 840px 741px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
@@ -1952,7 +1953,7 @@ button {
     width: 130px;
     height: 130px;
     opacity: 0;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: 0 -610px;
     background-size: 840px 741px;
     transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
@@ -2001,7 +2002,7 @@ button {
     width: 150px;
     height: 240px;
     z-index: 5;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -450px 0;
     background-size: 840px 741px;
   }
@@ -2013,7 +2014,7 @@ button {
     width: 120px;
     height: 185px;
     z-index: 3;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -600px 0;
     background-size: 840px 741px;
   }
@@ -2025,7 +2026,7 @@ button {
     top: 60px;
     width: 120px;
     height: 185px;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -720px 0;
     background-size: 840px 741px;
   }
@@ -2076,7 +2077,7 @@ button {
     width: 110px;
     height: 110px;
     z-index: 5;
-    background-image: url("../../images/css_sprites.png");
+    background-image: url("../images/css_sprites.png");
     background-position: -280px -600px;
     background-size: 840px 741px;
   }
@@ -2095,8 +2096,8 @@ button {
 
 @media screen and (min-width: 1120px) {
   .detail-info__inner {
-    border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
+    border-top: 1px solid #6e6e6e;
+    border-bottom: 1px solid #6e6e6e;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -2256,7 +2257,7 @@ button {
     bottom: 3px;
     width: 60px;
     height: 60px;
-    background-image: url("../../images/icon-sprite.png");
+    background-image: url("../images/icon-sprite.png");
   }
   .recommendation__btn-list a {
     display: inline-block;
@@ -2344,7 +2345,7 @@ button {
     bottom: 3px;
     width: 60px;
     height: 60px;
-    background-image: url("../../images/icon-sprite.png");
+    background-image: url("../images/icon-sprite.png");
   }
   .recommendation__btn-list li {
     padding: 0;
@@ -2440,15 +2441,6 @@ button {
   }
 }
 
-.main {
-  padding-top: 60px;
-}
-@media screen and (min-width: 768px) {
-  .main {
-    padding-top: 85px;
-  }
-}
-
 .header {
   position: fixed;
   left: 0;
@@ -2459,7 +2451,10 @@ button {
   background: transparent;
   transition: background 0.3s;
 }
-.header.is-active, .header.is-scroll {
+.body-event .header {
+  background: #fff;
+}
+.header.is-active, .header.is-scroll, .header.is-clicked {
   background: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -2701,6 +2696,12 @@ button {
   .gnb__depth1__btn:not(:focus-visible) {
     box-shadow: none;
   }
+  .body-index .gnb__depth1__btn {
+    color: #fff;
+  }
+  .body-index .header.is-active .gnb__depth1__btn, .body-index .header.is-scroll .gnb__depth1__btn {
+    color: #000;
+  }
   .gnb__depth1__btn::after {
     display: none;
     content: "";
@@ -2710,6 +2711,12 @@ button {
     bottom: -6px;
     width: calc(100% - 10px);
     height: 2px;
+    background: #000;
+  }
+  .body-index .gnb__depth1__btn::after {
+    background: #fff;
+  }
+  .body-index .header.is-active .gnb__depth1__btn::after, .body-index .header.is-scroll .gnb__depth1__btn::after {
     background: #000;
   }
   .gnb__depth1__btn.is-selected::after, .gnb__depth1__btn.is-active::after, .gnb__depth1__btn:hover::after {
@@ -2723,6 +2730,7 @@ button {
     height: auto;
     border-radius: 24px;
     background: #fede22;
+    color: #000 !important;
   }
   .gnb__depth1__btn.open-scraping::after {
     display: none;
@@ -2897,7 +2905,7 @@ button {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url(../../images/icon-sprite.png);
+  background-image: url(../images/icon-sprite.png);
 }
 .channel__link__img.facebook {
   background-position: 0 -90px;
@@ -2961,8 +2969,23 @@ button {
   width: 48px;
 }
 
-.main {
+.withdrawal__intro {
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .withdrawal__intro {
+    padding-top: 85px;
+  }
+}
+
+.body-event .main {
+  padding-top: 60px;
   background: #f8f8f8;
+}
+@media screen and (min-width: 768px) {
+  .body-event .main {
+    padding-top: 85px;
+  }
 }
 
 .event__inner {
@@ -3012,10 +3035,18 @@ button {
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: nowrap;
-  color: #888;
+  color: #6e6e6e;
 }
 .tab-list li {
   cursor: pointer;
+}
+.tab-list li:focus {
+  outline: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #005a96;
+}
+.tab-list li:not(:focus-visible) {
+  box-shadow: none;
 }
 .tab-list [aria-selected=true] {
   border-bottom: 2px solid #000;
@@ -3090,13 +3121,16 @@ button {
   font-weight: 400;
   font-size: 0.9375rem;
   padding-left: 0.625em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .event__details__period {
   order: 2;
   font-size: 0.8125rem;
   line-height: 1.5;
   margin-bottom: 0.625em;
-  color: #888;
+  color: #6e6e6e;
   padding-left: 0.625em;
 }
 
