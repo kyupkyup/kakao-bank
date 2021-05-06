@@ -10,6 +10,8 @@ function isInViewport(el) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  let prevDep2List = null;
+
   function transition_p1_img2() {
     const image = document.querySelector('.withdrawal__product1__image2');
     image.style.top = '35px';
