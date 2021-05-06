@@ -96,7 +96,7 @@
 
 .copyright {
   font-size: rem(12);
-  color: #888;
+  color: $gray;
 
   @include mobile {
     display: block;

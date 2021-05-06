@@ -712,7 +712,7 @@ button {
   .withdrawal__intro {
     width: 100%;
     height: auto;
-    background-color: #35a67d;
+    background-color: #317c61;
   }
   .withdrawal__intro:after {
     display: block;
@@ -725,7 +725,7 @@ button {
     height: 200px;
     font-size: 40px;
     padding: 20px;
-    background-color: #35a67d;
+    background-color: #317c61;
   }
   .withdrawal__title {
     font-size: 1rem;
@@ -1081,7 +1081,7 @@ button {
     font-size: 0.75em;
     line-height: 20px;
     background-color: #3e4459;
-    color: #a5a7b2;
+    color: #c0c0c0;
   }
 }
 
@@ -1092,7 +1092,7 @@ button {
     border-top: 1px solid #6e6e6e;
   }
   .detail-info__list-information {
-    border-bottom: 1px solid #a5a7b2;
+    border-bottom: 1px solid #c0c0c0;
   }
   .detail-info__list-information.is-open .detail-info__content {
     display: block;
@@ -1163,7 +1163,7 @@ button {
   .withdrawal__intro {
     width: 100%;
     height: auto;
-    background-color: #35a67d;
+    background-color: #317c61;
   }
   .withdrawal__intro:after {
     display: block;
@@ -1176,7 +1176,7 @@ button {
     height: 200px;
     font-size: 40px;
     padding: 20px;
-    background-color: #35a67d;
+    background-color: #317c61;
   }
   .withdrawal__title {
     font-size: 1rem;
@@ -1532,7 +1532,7 @@ button {
     font-size: 0.75em;
     line-height: 20px;
     background-color: #3e4459;
-    color: #a5a7b2;
+    color: #c0c0c0;
   }
 }
 
@@ -1543,7 +1543,7 @@ button {
     height: auto;
   }
   .detail-info__list-information {
-    border-bottom: 1px solid #a5a7b2;
+    border-bottom: 1px solid #c0c0c0;
   }
   .detail-info__list-information.is-open .detail-info__content {
     display: block;
@@ -1614,7 +1614,7 @@ button {
   .withdrawal__intro {
     width: 100%;
     height: auto;
-    background-color: #35a67d;
+    background-color: #317c61;
   }
   .withdrawal__intro:after {
     display: block;
@@ -1628,7 +1628,7 @@ button {
     width: 1080px;
     height: 500px;
     font-size: 40px;
-    background-color: #35a67d;
+    background-color: #317c61;
   }
   .withdrawal__title {
     font-size: 1.5rem;
@@ -2090,7 +2090,7 @@ button {
     font-size: 0.75em;
     line-height: 20px;
     background-color: #3e4459;
-    color: #a5a7b2;
+    color: #c0c0c0;
   }
 }
 
@@ -2105,7 +2105,7 @@ button {
     height: auto;
   }
   .detail-info__list-information {
-    border-bottom: 1px solid #a5a7b2;
+    border-bottom: 1px solid #c0c0c0;
   }
   .detail-info__list-information:last-child {
     border: none;
@@ -2221,7 +2221,7 @@ button {
     margin-top: 5px;
   }
   .recommendation__btn-list li:nth-child(-n+5) {
-    background-color: #35a67d;
+    background-color: #317c61;
     margin-right: 5px;
   }
   .recommendation__btn-list li:nth-child(n+6) {
@@ -2305,7 +2305,7 @@ button {
     background-position: -230px 0px;
   }
   .recommendation__btn-list li:nth-child(-n+5) {
-    background-color: #35a67d;
+    background-color: #317c61;
     margin-right: 5px;
   }
   .recommendation__btn-list li:nth-child(n+6) {
@@ -2388,7 +2388,7 @@ button {
     background-position: -230px 0px;
   }
   .recommendation__btn-list li:nth-child(-n+5) {
-    background-color: #35a67d;
+    background-color: #317c61;
     margin-right: 5px;
   }
   .recommendation__btn-list li:nth-child(n+6) {
@@ -2877,7 +2877,7 @@ button {
 
 .copyright {
   font-size: 0.75rem;
-  color: #888;
+  color: #666;
 }
 @media screen and (max-width: 768px) {
   .copyright {
