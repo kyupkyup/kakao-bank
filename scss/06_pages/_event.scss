@@ -1,5 +1,9 @@
-.main {
+.body-event .main {
+  padding-top: 60px;
   background: rgb(248, 248, 248);
+  @include tablet {
+    padding-top: 85px;
+  }
 }
 
 .event {
@@ -27,7 +31,7 @@
 
   &__list {
     &::after {
-      content: "";
+      content: '';
       clear: both;
       display: block;
     }
