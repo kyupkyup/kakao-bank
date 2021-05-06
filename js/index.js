@@ -73,9 +73,9 @@ const detailList = document.querySelector('.detail-info');
 
 function detailClickHandler(e) {
   let elem = e.target;
+
   while (!elem.classList.contains('detail-info__title')) {
     elem = elem.parentNode;
-
     if (elem.nodeName == 'BODY') {
       elem = null;
       return;
@@ -94,9 +94,10 @@ function detailClickHandler(e) {
   }
   prevDep2List = elem.parentNode;
 }
-detailList.addEventListener('click', detailClickHandler);
 detailList.addEventListener('keydown', function (e) {
-  if (e.key == 'Enter') {
-    detailClickHandler(e);
+  if (e == 'click') {
+    return;
+  } else if (e.key == 'Enter') {
   }
 });
+detailList.addEventListener('click', detailClickHandler);

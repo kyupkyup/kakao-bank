@@ -703,6 +703,10 @@ button {
   background-image: url(../images/icon-go-to-top.svg);
 }
 
+.main {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .withdrawal__intro {
     width: 100%;
@@ -1085,7 +1089,6 @@ button {
     width: 100%;
     height: auto;
     border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
   }
   .detail-info__list-information {
     border-bottom: 1px solid #a5a7b2;
@@ -1535,7 +1538,6 @@ button {
 @media screen and (min-width: 768px) {
   .detail-info__inner {
     border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
     width: 100%;
     height: auto;
   }
@@ -2199,12 +2201,17 @@ button {
     margin-right: auto;
     margin-top: 20px;
   }
+  .recommendation__btn-list a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+  }
   .recommendation__btn-list li {
     display: block;
     position: relative;
     width: 48%;
     height: auto;
-    padding: 20px 12px 12px 20px;
     border-radius: 2px;
     font-size: 17px;
     line-height: 20px;
@@ -2251,12 +2258,17 @@ button {
     height: 60px;
     background-image: url("../../images/icon-sprite.png");
   }
+  .recommendation__btn-list a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 12px 12px 20px;
+  }
   .recommendation__btn-list li {
     display: block;
     position: relative;
     width: 32%;
     height: 112px;
-    padding: 20px 12px 12px 20px;
     border-radius: 2px;
     font-size: 17px;
     line-height: 20px;
@@ -2319,6 +2331,12 @@ button {
   .recommendation__btn-list {
     margin-top: 20px;
   }
+  .recommendation__btn-list a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 12px 12px 20px;
+  }
   .recommendation__btn-list__img {
     display: block;
     position: absolute;
@@ -2329,11 +2347,11 @@ button {
     background-image: url("../../images/icon-sprite.png");
   }
   .recommendation__btn-list li {
+    padding: 0;
     display: block;
     position: relative;
     width: 175px;
     height: 112px;
-    padding: 20px 12px 12px 20px;
     border-radius: 2px;
     font-size: 17px;
     line-height: 20px;
@@ -2384,7 +2402,7 @@ button {
 
 .deliberated {
   text-align: right;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .deliberated__text {
