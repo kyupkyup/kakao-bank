@@ -2,7 +2,7 @@
 $breakpoint: 768px;
 $breakpoint2: 1120px;
 @mixin mobile {
-  @media screen and (max-width: #{$breakpoint - 1}) {
+  @media screen and (max-width: #{$breakpoint}) {
     @content;
   }
 }

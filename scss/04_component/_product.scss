@@ -1,0 +1,1542 @@
+.withdrawal {
+  @include mobile {
+    &__intro {
+      width: 100%;
+      height: auto;
+      background-color: $primaryGreen;
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+        padding-bottom: 20px;
+      }
+    }
+    &__inner {
+      width: 100%;
+      height: 200px;
+      font-size: 40px;
+      padding: 20px;
+      background-color: $primaryGreen;
+    }
+    &__title {
+      font-size: rem(16px);
+      color: white;
+      margin-bottom: 20px;
+    }
+    &__text {
+      display: block;
+      width: 200px;
+      font-size: rem(34px);
+      line-height: rem(42px);
+      color: white;
+    }
+
+    &__list {
+      width: 100%;
+      height: 100px;
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &__safebox,
+    &__friends,
+    &__security {
+      font-size: 13px;
+      color: white;
+      float: left;
+      width: 33%;
+      height: 100px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    &__safebox__img {
+      display: block;
+      width: 100px;
+      height: 80px;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -890px -500px;
+    }
+    &__friends__img {
+      width: 100px;
+      height: 80px;
+      display: block;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -1085px -500px;
+    }
+    &__security__img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 80px;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -990px -500px;
+    }
+
+    &__product1,
+    &__product2,
+    &__product3,
+    &__product4 {
+      &__inner {
+        width: 100%;
+        height: auto;
+      }
+      &__title {
+        font-size: em(25px);
+        padding: 0 em(48px) 0 em(10px);
+        margin: 20px 0;
+      }
+      &__text {
+        font-size: em(14px);
+        line-height: em(24px);
+        color: $gray;
+        padding: 0 em(48px) 0 em(24px);
+      }
+    }
+    &__product1 {
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 275px;
+        height: 384px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1060px -660px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 68px;
+        top: 125px;
+        width: 150px;
+        height: 274px;
+        opacity: 0;
+
+        z-index: 4;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1365px -660px;
+        transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+      }
+      &__image3 {
+        z-index: 1;
+        position: absolute;
+        display: block;
+        opacity: 0;
+        left: 70px;
+        top: 35px;
+        width: 150px;
+        height: 274px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1520px -660px;
+        transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+      }
+    }
+    &__product2 {
+      background-color: $grayscaleGray;
+      padding-top: 20px;
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 40px;
+        width: 230px;
+        height: 340px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -0px;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 220px;
+        top: 80px;
+        width: 25px;
+        height: 300px;
+        z-index: 3;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px -100px;
+        background-size: 840px 741px;
+        animation: 1s ease 0s 6 normal forwards running bounce;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 50px;
+        top: 65px;
+        width: 220px;
+        height: 150px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px 0;
+        background-size: 840px 741px;
+      }
+      &__image4 {
+        z-index: 2;
+        position: absolute;
+        display: block;
+        padding: 15px;
+        left: 57px;
+        top: 0px;
+        width: 200px;
+        height: 180px;
+        opacity: 0;
+        background-color: $primaryYellow;
+        animation: 1s ease 0s 6 normal forwards running bounce;
+      }
+      &__image4-text {
+        z-index: 10;
+        position: absolute;
+        display: block;
+        font-weight: 700;
+        left: 77px;
+        top: 220px;
+      }
+      &__image5 {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: -00px;
+        width: 330px;
+        height: 106px;
+        background-color: $grayscaleGray;
+        margin-left: -165px;
+      }
+    }
+
+    &__product3 {
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 350px;
+      }
+      &__title {
+        text-align: center;
+      }
+      &__text {
+        text-align: center;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 180px;
+        height: 185px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -180px -215px;
+        background-size: 560px 494px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 190px;
+        left: 150px;
+        width: 180px;
+        height: 185px;
+        opacity: 0;
+
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -220px;
+        background-size: 560px 494px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 230px;
+        top: 0px;
+        width: 130px;
+        height: 130px;
+        opacity: 0;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -150px -610px;
+        background-size: 840px 741px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+      }
+      &__image4 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 270px;
+        top: 195px;
+        width: 130px;
+        height: 130px;
+        opacity: 0;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: 0 -610px;
+        background-size: 840px 741px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
+      }
+    }
+    &__product4 {
+      background-color: $grayscaleGray;
+      padding-top: 20px;
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 310px;
+        height: 350px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 82px;
+        width: 150px;
+        height: 240px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -450px 0;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 60px;
+        left: 0px;
+        width: 120px;
+        height: 185px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -600px 0;
+        background-size: 840px 741px;
+      }
+      &__image3 {
+        z-index: 3;
+        position: absolute;
+        display: block;
+        left: 195px;
+        top: 60px;
+        width: 120px;
+        height: 185px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -720px 0;
+        background-size: 840px 741px;
+      }
+    }
+    &__product5 {
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #3e4459;
+        padding-bottom: 20px;
+      }
+      &__img-container {
+        @include autoMargin;
+        order: -1;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+      }
+      &__title {
+        text-align: center;
+
+        padding: 0 em(15px);
+        font-size: em(25px);
+        line-height: 34px;
+        color: white;
+      }
+      &__text {
+        text-align: center;
+        padding: em(15px) em(48px) em(30px);
+        font-size: em(12px);
+        line-height: 24px;
+        opacity: 0.6;
+        color: #eee;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        width: 110px;
+        height: 110px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -280px -600px;
+        background-size: 840px 741px;
+      }
+      &__text-guitar {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: em(17px) em(15px) em(14px);
+        font-size: em(12px);
+        line-height: 20px;
+        background-color: $secondaryLightBlue3;
+        color: $grayscaleGray3;
+      }
+    }
+  }
+}
+
+.detail-info {
+  @include mobile {
+    &__inner {
+      width: 100%;
+      height: auto;
+    }
+    &__list {
+    }
+    &__list-information {
+    }
+    &__title {
+      display: block;
+      height: 60px;
+      padding: 20px;
+      background-color: white;
+    }
+    &__title:focus + &__content {
+      height: auto;
+      display: block;
+      padding: 20px;
+    }
+    &__content {
+      display: none;
+      & strong {
+        display: block;
+        height: 30px;
+      }
+    }
+    &__content {
+      height: auto;
+      display: block;
+      padding: 20px;
+      & ol {
+        list-style: none;
+      }
+      & strong {
+        display: block;
+        height: 30px;
+      }
+      & strong:first-child {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+    }
+    &__inner-title {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+    }
+    &__inner-content {
+      font-size: em(14px);
+      line-height: em(22px);
+      margin-bottom: em(20px);
+
+      color: #666;
+    }
+    &__download {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+      float: right;
+    }
+  }
+}
+.withdrawal {
+  @include tablet {
+    &__intro {
+      width: 100%;
+      height: auto;
+      background-color: $primaryGreen;
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+        padding-bottom: 20px;
+      }
+    }
+    &__inner {
+      width: 100%;
+      height: 200px;
+      font-size: 40px;
+      padding: 20px;
+      background-color: $primaryGreen;
+    }
+    &__title {
+      font-size: rem(16px);
+      color: white;
+      margin-bottom: 20px;
+    }
+    &__text {
+      display: block;
+      width: 200px;
+      font-size: rem(34px);
+      line-height: rem(42px);
+      color: white;
+    }
+
+    &__list {
+      width: 100%;
+      height: 100px;
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &__safebox,
+    &__friends,
+    &__security {
+      font-size: 13px;
+      color: white;
+      float: left;
+      width: 33%;
+      height: 100px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    &__safebox__img {
+      display: block;
+      width: 100px;
+      height: 80px;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -890px -500px;
+    }
+    &__friends__img {
+      width: 100px;
+      height: 80px;
+      display: block;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -1085px -500px;
+    }
+    &__security__img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 80px;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -990px -500px;
+    }
+
+    &__product1,
+    &__product2,
+    &__product3,
+    &__product4 {
+      &__inner {
+        width: 100%;
+        height: auto;
+      }
+      &__title {
+        font-size: em(25px);
+        padding: 0 em(48px) 0 em(10px);
+        margin: 20px 0;
+      }
+      &__text {
+        font-size: em(14px);
+        line-height: em(24px);
+        color: $gray;
+        padding: 0 em(48px) 0 em(24px);
+      }
+    }
+    &__product1 {
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 275px;
+        height: 384px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1060px -660px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 68px;
+        top: 125px;
+        width: 150px;
+        height: 274px;
+        opacity: 0;
+
+        z-index: 4;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1365px -660px;
+        transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+      }
+      &__image3 {
+        z-index: 1;
+        position: absolute;
+        display: block;
+        opacity: 0;
+        left: 70px;
+        top: 35px;
+        width: 150px;
+        height: 274px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1520px -660px;
+        transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+      }
+    }
+    &__product2 {
+      background-color: $grayscaleGray;
+      padding-top: 20px;
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 40px;
+        width: 230px;
+        height: 340px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -0px;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 220px;
+        top: 80px;
+        width: 25px;
+        height: 300px;
+        z-index: 3;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px -100px;
+        background-size: 840px 741px;
+        animation: 1s ease 0s 6 normal forwards running bounce;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 50px;
+        top: 65px;
+        width: 220px;
+        height: 150px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px 0;
+        background-size: 840px 741px;
+      }
+      &__image4 {
+        z-index: 2;
+        position: absolute;
+        display: block;
+        padding: 15px;
+        left: 57px;
+        top: 0px;
+        width: 200px;
+        height: 180px;
+        opacity: 0;
+        background-color: $primaryYellow;
+        animation: 1s ease 0s 6 normal forwards running bounce;
+      }
+      &__image4-text {
+        z-index: 10;
+        position: absolute;
+        display: block;
+        font-weight: 700;
+        left: 77px;
+        top: 220px;
+      }
+      &__image5 {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: -00px;
+        width: 330px;
+        height: 106px;
+        background-color: $grayscaleGray;
+        margin-left: -165px;
+      }
+    }
+
+    &__product3 {
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 350px;
+      }
+      &__title {
+        text-align: center;
+      }
+      &__text {
+        text-align: center;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 180px;
+        height: 185px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -180px -215px;
+        background-size: 560px 494px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 190px;
+        left: 150px;
+        width: 180px;
+        height: 185px;
+        opacity: 0;
+
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -220px;
+        background-size: 560px 494px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 230px;
+        top: 0px;
+        width: 130px;
+        height: 130px;
+        opacity: 0;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -150px -610px;
+        background-size: 840px 741px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+      }
+      &__image4 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 270px;
+        top: 195px;
+        width: 130px;
+        height: 130px;
+        opacity: 0;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: 0 -610px;
+        background-size: 840px 741px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
+      }
+    }
+    &__product4 {
+      background-color: $grayscaleGray;
+      padding-top: 20px;
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 310px;
+        height: 350px;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 82px;
+        width: 150px;
+        height: 240px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -450px 0;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 60px;
+        left: 0px;
+        width: 120px;
+        height: 185px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -600px 0;
+        background-size: 840px 741px;
+      }
+      &__image3 {
+        z-index: 3;
+        position: absolute;
+        display: block;
+        left: 195px;
+        top: 60px;
+        width: 120px;
+        height: 185px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -720px 0;
+        background-size: 840px 741px;
+      }
+    }
+    &__product5 {
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #3e4459;
+        padding-bottom: 20px;
+      }
+      &__img-container {
+        @include autoMargin;
+        order: -1;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+      }
+      &__title {
+        text-align: center;
+
+        padding: 0 em(15px);
+        font-size: em(25px);
+        line-height: 34px;
+        color: white;
+      }
+      &__text {
+        text-align: center;
+        padding: em(15px) em(48px) em(30px);
+        font-size: em(12px);
+        line-height: 24px;
+        opacity: 0.6;
+        color: #eee;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        width: 110px;
+        height: 110px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -280px -600px;
+        background-size: 840px 741px;
+      }
+      &__text-guitar {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: em(17px) em(15px) em(14px);
+        font-size: em(12px);
+        line-height: 20px;
+        background-color: $secondaryLightBlue3;
+        color: $grayscaleGray3;
+      }
+    }
+  }
+}
+
+.detail-info {
+  @include tablet {
+    &__inner {
+      width: 100%;
+      height: auto;
+    }
+    &__list {
+    }
+    &__list-information {
+    }
+    &__title {
+      display: block;
+      height: 60px;
+      padding: 20px;
+      background-color: white;
+    }
+    &__title:focus + &__content {
+      height: auto;
+      display: block;
+      padding: 20px;
+    }
+    &__content {
+      display: none;
+      & strong {
+        display: block;
+        height: 30px;
+      }
+    }
+    &__content {
+      height: auto;
+      display: block;
+      padding: 20px;
+      & ol {
+        list-style: none;
+      }
+      & strong {
+        display: block;
+        height: 30px;
+      }
+      & strong:first-child {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+    }
+    &__inner-title {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+    }
+    &__inner-content {
+      font-size: em(14px);
+      line-height: em(22px);
+      margin-bottom: em(20px);
+
+      color: #666;
+    }
+    &__download {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+      float: right;
+    }
+  }
+}
+.withdrawal {
+  @include desktop {
+    &__intro {
+      width: 100%;
+      height: auto;
+      background-color: $primaryGreen;
+      &:after {
+        display: block;
+        content: '';
+        clear: both;
+        padding-bottom: 20px;
+      }
+    }
+    &__inner {
+      @include autoMargin;
+      width: 520px;
+      height: 500px;
+      font-size: 40px;
+      background-color: $primaryGreen;
+    }
+    &__title {
+      font-size: rem(24px);
+      color: white;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-top: em(50px);
+    }
+    &__text {
+      display: block;
+      font-weight: 300;
+      text-align: center;
+      width: 100%;
+      line-height: rem(70px);
+      font-size: rem(50px);
+      color: white;
+      margin-bottom: em(20px);
+    }
+
+    &__list {
+      width: 100%;
+      height: 100px;
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &__safebox,
+    &__friends,
+    &__security {
+      font-size: 13px;
+      color: white;
+      float: left;
+      width: 33%;
+      height: 100px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    &__safebox__img {
+      display: block;
+      width: 100px;
+      height: 80px;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -890px -500px;
+    }
+    &__friends__img {
+      width: 100px;
+      height: 80px;
+      display: block;
+      margin: 0 auto;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -1085px -500px;
+    }
+    &__security__img {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 80px;
+      background-image: url('../../images/css_sprites.png');
+      background-position: -990px -500px;
+    }
+
+    &__product1,
+    &__product2,
+    &__product3,
+    &__product4 {
+      &__inner {
+        width: 100%;
+        height: 500px;
+      }
+      &__title {
+        font-size: em(40px);
+        padding: 0 em(48px) 0 em(10px);
+        line-height: 1.3;
+        margin: 20px 0;
+      }
+      &__text {
+        font-size: em(14px);
+        line-height: em(24px);
+        color: $gray;
+        padding: 0 em(48px) 0 em(24px);
+      }
+    }
+    &__product1 {
+      &__inner {
+        position: relative;
+        @include autoMargin;
+        width: 1080px;
+        box-sizing: border-box;
+      }
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        top: 50px;
+        width: 400px;
+        height: 400px;
+        float: right;
+      }
+      &__title {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        width: 60%;
+      }
+
+      &__text {
+        display: inline-block;
+        position: absolute;
+        top: 40%;
+        width: 50%;
+      }
+
+      &__image {
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 275px;
+        height: 384px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1060px -660px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 68px;
+        top: 125px;
+        width: 150px;
+        height: 274px;
+        opacity: 0;
+
+        z-index: 4;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1365px -660px;
+        transition: top 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+      }
+      &__image3 {
+        z-index: 1;
+        position: absolute;
+        display: block;
+        opacity: 0;
+        left: 70px;
+        top: 35px;
+        width: 150px;
+        height: 274px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -1520px -660px;
+        transition: left 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+      }
+    }
+    &__product2 {
+      &__inner {
+        position: relative;
+        @include autoMargin;
+        width: 1080px;
+        box-sizing: border-box;
+      }
+      background-color: $grayscaleGray;
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        left: 50px;
+        top: 50px;
+        width: 400px;
+        height: 400px;
+        float: left;
+      }
+      &__title {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        text-align: right;
+        width: 60%;
+      }
+
+      &__text {
+        display: inline-block;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 50%;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 40px;
+        width: 230px;
+        height: 340px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -0px;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        left: 220px;
+        top: 80px;
+        width: 25px;
+        height: 300px;
+        z-index: 3;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px -100px;
+        background-size: 840px 741px;
+        animation: 1s ease 0s 6 normal forwards running bounce;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 50px;
+        top: 65px;
+        width: 220px;
+        height: 150px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -230px 0;
+        background-size: 840px 741px;
+      }
+      &__image4 {
+        z-index: 2;
+        position: absolute;
+        display: block;
+        padding: 15px;
+        left: 57px;
+        top: 0px;
+        width: 200px;
+        height: 180px;
+        opacity: 0;
+        background-color: $primaryYellow;
+        animation: 1s ease 0s 6 normal forwards running bounce;
+      }
+      &__image4-text {
+        z-index: 10;
+        position: absolute;
+        display: block;
+        font-weight: 700;
+        left: 77px;
+        top: 220px;
+      }
+      &__image5 {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: -00px;
+        width: 330px;
+        height: 106px;
+        background-color: $grayscaleGray;
+        margin-left: -165px;
+      }
+    }
+
+    &__product3 {
+      &__inner {
+        position: relative;
+        @include autoMargin;
+        width: 1080px;
+        box-sizing: border-box;
+      }
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 400px;
+        height: 350px;
+        float: right;
+        top: 50px;
+      }
+
+      &__title {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        width: 60%;
+      }
+
+      &__text {
+        display: inline-block;
+        position: absolute;
+        top: 40%;
+        width: 50%;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 180px;
+        height: 185px;
+        z-index: 1;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -180px -215px;
+        background-size: 560px 494px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 190px;
+        left: 150px;
+        width: 180px;
+        height: 185px;
+        opacity: 0;
+
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -0px -220px;
+        background-size: 560px 494px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.3s;
+      }
+      &__image3 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 230px;
+        top: 0px;
+        width: 130px;
+        height: 130px;
+        opacity: 0;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: -150px -610px;
+        background-size: 840px 741px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+      }
+      &__image4 {
+        z-index: 5;
+        position: absolute;
+        display: block;
+        left: 270px;
+        top: 195px;
+        width: 130px;
+        height: 130px;
+        opacity: 0;
+
+        background-image: url('../../images/css_sprites.png');
+        background-position: 0 -610px;
+        background-size: 840px 741px;
+        transition: all 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s;
+      }
+    }
+    &__product4 {
+      background-color: $grayscaleGray;
+      &__inner {
+        position: relative;
+        @include autoMargin;
+        width: 1080px;
+        box-sizing: border-box;
+      }
+      &__img-container {
+        @include autoMargin;
+        position: relative;
+        width: 310px;
+        height: 350px;
+        margin-left: 100px;
+        top: 20%;
+        float: left;
+      }
+      &__title {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        right: 250px;
+        text-align: left;
+        padding: 0;
+        width: 30%;
+      }
+
+      &__text {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        width: 50%;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 82px;
+        width: 150px;
+        height: 240px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -450px 0;
+        background-size: 840px 741px;
+      }
+      &__image2 {
+        position: absolute;
+        display: block;
+        top: 60px;
+        left: 0px;
+        width: 120px;
+        height: 185px;
+        z-index: 3;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -600px 0;
+        background-size: 840px 741px;
+      }
+      &__image3 {
+        z-index: 3;
+        position: absolute;
+        display: block;
+        left: 195px;
+        top: 60px;
+        width: 120px;
+        height: 185px;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -720px 0;
+        background-size: 840px 741px;
+      }
+    }
+    &__product5 {
+      background-color: #3e4459;
+
+      &__inner {
+        @include autoMargin;
+        width: 1080px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #3e4459;
+        padding-bottom: 20px;
+      }
+      &__img-container {
+        @include autoMargin;
+        order: -1;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+      }
+      &__title {
+        text-align: center;
+
+        padding: 0 em(15px);
+        font-size: em(25px);
+        line-height: 34px;
+        color: white;
+      }
+      &__text {
+        @include autoMargin;
+        display: block;
+        width: 500px;
+        text-align: center;
+        padding: em(15px) em(48px) em(30px);
+        font-size: em(12px);
+        line-height: 24px;
+        opacity: 0.6;
+        color: #eee;
+      }
+      &__image {
+        position: absolute;
+        display: block;
+        width: 110px;
+        height: 110px;
+        z-index: 5;
+        background-image: url('../../images/css_sprites.png');
+        background-position: -280px -600px;
+        background-size: 840px 741px;
+      }
+      &__text-guitar {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        padding: em(17px) em(15px) em(14px);
+        font-size: em(12px);
+        line-height: 20px;
+        background-color: $secondaryLightBlue3;
+        color: $grayscaleGray3;
+      }
+    }
+  }
+}
+
+.detail-info {
+  @include desktop {
+    &__inner {
+      border-top: 1px solid $grayscaleGray2;
+      border-bottom: 1px solid $grayscaleGray2;
+      margin-top: 50px;
+      @include autoMargin;
+      width: 1080px;
+      height: auto;
+    }
+    &__list {
+    }
+    &__list-information {
+      border-bottom: 1px solid $grayscaleGray3;
+    }
+    &__list-information:last-child {
+      border: none;
+    }
+    &__title {
+      display: block;
+      height: 60px;
+      padding: 20px;
+      background-color: white;
+      transition: all 1s;
+    }
+    &__title:focus + &__content {
+      height: auto;
+      display: block;
+      padding: 20px;
+    }
+    &__content {
+      display: none;
+      & strong {
+        display: block;
+        height: 30px;
+      }
+    }
+    &__content {
+      height: auto;
+      display: block;
+      padding: 20px;
+      background-color: $grayscaleGray4;
+      transition: all 1s;
+      & ol {
+        list-style: none;
+      }
+      & strong {
+        display: block;
+        height: 30px;
+      }
+      & strong:first-child {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+    }
+    &__inner-title {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+    }
+    &__inner-content {
+      font-size: em(14px);
+      line-height: em(22px);
+      margin-bottom: em(20px);
+
+      color: #666;
+    }
+    &__download {
+      font-size: em(15px);
+      font-weight: 700;
+      margin-bottom: em(10px);
+      float: right;
+    }
+  }
+}
+
+.recommendation {
+  @include desktop {
+    @include autoMargin;
+    width: 1080px;
+    height: 600px;
+    margin-top: 100px;
+    &__header {
+      font-size: 22px;
+      color: #000;
+      text-align: center;
+    }
+    &__btn-list {
+      margin-top: 20px;
+      & li {
+        display: block;
+        position: relative;
+        width: 175px;
+        height: 112px;
+        padding: 20px 12px 12px 20px;
+        border-radius: 2px;
+        font-size: 17px;
+        line-height: 20px;
+        color: #fff;
+        float: left;
+        margin-top: 5px;
+      }
+      & li:nth-child(-n + 5) {
+        background-color: $primaryGreen;
+        margin-right: 5px;
+      }
+      & li:nth-child(n + 6) {
+        background-color: $secondaryLightBlue;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.is--invalid {
+  display: none;
+}
