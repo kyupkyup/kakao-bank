@@ -169,6 +169,10 @@
       background: $primaryYellow;
     }
 
+    &__depth1__btn.open-scraping::after {
+      display: none;
+    }
+
     &__depth2-wrap {
       position: absolute;
       top: 80px;

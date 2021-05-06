@@ -11,7 +11,8 @@
     "dev": "live-server",
     "build:sass": "npm run sass -- --no-source-map",
     "build:postcss": "postcss css/style.css -o css/style.css",
-    "build": "run-s build:sass build:postcss"
+    "build": "run-s build:sass build:postcss",
+    "deploy": "gh-pages"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,11 @@
   "bugs": {
     "url": "https://github.com/chacha912/kakao-bank/issues"
   },
-  "homepage": "https://github.com/chacha912/kakao-bank#readme",
+  "homepage": " https://chacha912.github.io/kakao-bank/",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "chokidar-cli": "^2.1.0",
+    "gh-pages": "^3.1.0",
     "htmlhint": "^0.14.2",
     "live-server": "^1.2.1",
     "normalize-scss": "^7.0.1",
