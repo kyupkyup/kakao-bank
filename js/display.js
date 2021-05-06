@@ -1,19 +1,27 @@
-// const ing = document.getElementById("");
-// const end = document.getElementById("");
+const detailList = document.querySelector('.detail-info');
 
-const list = document.getElementsByClassName('detail-info__title');
-const detail = document.getElementsByClassName('detail-info__content');
-for (let idx = 0; idx < list.length; idx++) {
-  list[idx].addEventListener('click', function () {
-    // detail[idx].className = 'detail-info__content';
-    detail[idx].classList.toggle('is--invalid');
+function detailClickHandler(e) {
+  let elem = e.target;
+  while (!elem.classList.contains('detail-info__title')) {
+    elem = elem.parentNode;
 
-    for (let i = 0; i < list.length; i++) {
-      if (i != idx) {
-        detail[i].classList.add('is--invalid');
-      }
+    if (elem.nodeName == 'BODY') {
+      elem = null;
+      return;
     }
-  });
+  }
+
+  if (prevDep2List == null) {
+    elem.parentNode.classList.add('is-open');
+  } else if (prevDep2List == elem.parentNode) {
+    elem.parentNode.classList.remove('is-open');
+    prevDep2List = null;
+    return;
+  } else {
+    prevDep2List.classList.remove('is-open');
+    elem.parentNode.classList.add('is-open');
+  }
+  prevDep2List = elem.parentNode;
 }
 
 const ing = document.getElementById('ongoingTab');
