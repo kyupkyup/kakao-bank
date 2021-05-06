@@ -694,7 +694,7 @@ button {
   background-image: url(../images/icon-go-to-top.svg);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .withdrawal__intro {
     width: 100%;
     height: auto;
@@ -1071,7 +1071,7 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .detail-info__inner {
     width: 100%;
     height: auto;
