@@ -1,28 +1,7 @@
-// Float 해제를 위한 clear 스타일 ---------------------------------------------------- /
-@mixin clearFix {
-  &::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-}
-
 // Auto Margin을 활용한 박스 가운데 정렬 ------------------------------------------------ /
 @mixin autoMargin($marginX: auto) {
   margin-left: $marginX;
   margin-right: $marginX;
-}
-
-// 요소 박스의 가로 크기를 뷰포트 기준 100vw로 설정 -------------------------------------------- /
-@mixin boxFull($width: 100vw) {
-  // width: 100vw로 인해 body 영역에 가로 스크롤바가 나타난다.
-  // 이를 헤결하기 위해 루트 요소인 html에 overflow-x: hidden;을 추가해야 한다.
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  width: 100vw;
-  margin-left: -50vw;
-  @content;
 }
 
 // 요소 박스의 크기 고정 ----------------------------------------------------------- /
