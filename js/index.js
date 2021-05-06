@@ -68,3 +68,35 @@ document.addEventListener(
     passive: true,
   }
 );
+
+const detailList = document.querySelector('.detail-info');
+
+function detailClickHandler(e) {
+  let elem = e.target;
+  while (!elem.classList.contains('detail-info__title')) {
+    elem = elem.parentNode;
+
+    if (elem.nodeName == 'BODY') {
+      elem = null;
+      return;
+    }
+  }
+
+  if (prevDep2List == null) {
+    elem.parentNode.classList.add('is-open');
+  } else if (prevDep2List == elem.parentNode) {
+    elem.parentNode.classList.remove('is-open');
+    prevDep2List = null;
+    return;
+  } else {
+    prevDep2List.classList.remove('is-open');
+    elem.parentNode.classList.add('is-open');
+  }
+  prevDep2List = elem.parentNode;
+}
+detailList.addEventListener('click', detailClickHandler);
+detailList.addEventListener('keydown', function (e) {
+  if (e.key == 'Enter') {
+    detailClickHandler(e);
+  }
+});
