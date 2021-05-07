@@ -653,6 +653,7 @@ button {
   top: 0;
   z-index: 999;
   padding: 2px 0;
+  width: 100%;
   background: transparent;
   transition: background 0.3s;
 }
@@ -1105,12 +1106,16 @@ button {
   align-items: center;
   width: 40px;
   height: 40px;
+  font-size: 0.75rem;
 }
 .channel__link__img {
   display: block;
   width: 24px;
   height: 24px;
   background-image: url(../images/icon-sprite.png);
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 .channel__link__img.facebook {
   background-position: 0 -90px;
@@ -1179,10 +1184,8 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  .withdrawal {
-    padding-top: 60px;
-  }
   .withdrawal__intro {
+    padding-top: 60px;
     width: 100%;
     height: auto;
     background-color: #317c61;

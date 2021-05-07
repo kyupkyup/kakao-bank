@@ -4,8 +4,8 @@
 
 .withdrawal {
   @include mobile {
-    padding-top: 60px;
     &__intro {
+      padding-top: 60px;
       width: 100%;
       height: auto;
       background-color: $primaryGreen;
