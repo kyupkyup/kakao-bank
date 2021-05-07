@@ -569,11 +569,22 @@
           <h2 class="a11y-hidden">상품 상세정보</h2>
           <ul class="detail-info__list">
             <li class="detail-info__list-information">
-              <a href="#none" class="detail-info__title" role="button"
-                >상품안내</a
+              <a
+                href="#none"
+                role="button"
+                class="detail-info__title"
+                id="detailTitle1"
+                aria-expanded="false"
+                aria-controls="detailCont1"
               >
+                상품안내
+              </a>
 
-              <div class="detail-info__content">
+              <div
+                class="detail-info__content"
+                id="detailCont1"
+                aria-labelledby="detailTitle1"
+              >
                 <dl>
                   <dt class="detail-info__inner-title">가입대상</dt>
                   <dd class="detail-info__inner-content">
