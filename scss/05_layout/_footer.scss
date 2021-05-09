@@ -119,6 +119,7 @@
     align-items: center;
     width: 40px;
     height: 40px;
+    font-size: rem(12);
   }
 
   &__link__img {
@@ -126,6 +127,9 @@
     width: 24px;
     height: 24px;
     background-image: url(../images/icon-sprite.png);
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
 
     &.facebook {
       background-position: 0 -90px;

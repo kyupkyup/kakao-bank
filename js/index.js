@@ -11,7 +11,6 @@ function isInViewport(el) {
 
 document.addEventListener('DOMContentLoaded', function () {
   let prevDep2List = null;
-
   function transition_p1_img2() {
     const image = document.querySelector('.withdrawal__product1__image2');
     image.style.top = '35px';
@@ -55,7 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const box1 = document.querySelector('.withdrawal__product1');
   const box2 = document.querySelector('.withdrawal__product2');
   const box3 = document.querySelector('.withdrawal__product3');
-  const box4 = document.querySelector('.withdrawal__product4');
+  // const box4 = document.querySelector('.withdrawal__product4');
+
   document.addEventListener(
     'scroll',
     function () {

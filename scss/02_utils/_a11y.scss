@@ -14,7 +14,7 @@
   @include a11yHidden();
 }
 
-// 포커스, 포커스 비저블, 포커스 위드인 ----------------------------------------------------- /
+// 포커스, 포커스 비저블 ----------------------------------------------------- /
 @mixin focus() {
   &:focus {
     outline: 0;
@@ -28,15 +28,6 @@
   @if $visible {
     &:not(:focus-visible) {
       box-shadow: none;
-      @content;
-    }
-  }
-}
-
-@mixin focusWithin($withIn: true) {
-  @include focus();
-  @if $withIn {
-    &:focus-within {
       @content;
     }
   }
