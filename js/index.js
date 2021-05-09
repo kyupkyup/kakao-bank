@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     prevDep2List = elem.parentNode;
   }
+
   detailList.addEventListener('keydown', function (e) {
     if (e == 'click') {
       return;
