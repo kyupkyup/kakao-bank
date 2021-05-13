@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="카카오뱅크 이벤트" />
+    <meta property="og:description" content="카카오뱅크 이벤트" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="카카오뱅크 이벤트" />
+    <meta property="og:url" content="https://www.kakaobank.com/events" />
+    <meta
+      property="og:image"
+      content="https://www.kakaobank.com/products_static/images/common/kakaobank_og_img.png"
+    />
+    <meta property="og:site_name" content="www.kakaobank.com" />
+    <title>입출금통장 | 카카오뱅크</title>
+    <link
+      rel="icon"
+      href="https://og.kakaobank.io/view/59f15ae4-f93f-4c60-ba2b-8bff79a6fc71"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="https://og.kakaobank.io/view/75e5a73d-3bb8-4c33-90d2-1165ded49b7d"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      href="https://og.kakaobank.io/view/42808941-dc90-4fd7-90d2-4ea185ae0a7b"
+      sizes="120x120"
+    />
+    <link
+      rel="icon"
+      href="https://og.kakaobank.io/view/c8e08bf7-f1e5-43b3-9b5b-a3dc0814b89b"
+      sizes="256x256"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/navigation.js"></script>
+    <script src="./js/display.js"></script>
+  </head>
+  <body class="body-event">
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="./index.html" class="header__link">
+            <img src="./images/logo_black.svg" alt="카카오뱅크 홈"
+          /></a>
+        </h1>
+        <button type="button" class="gnb-open-btn" aria-label="메인메뉴 열기">
+          <span class="burger-line pos-top"></span>
+          <span class="burger-line pos-mid"></span>
+          <span class="burger-line pos-bottom"></span>
+        </button>
+        <nav class="gnb">
+          <h2 class="a11y-hidden">메인 메뉴</h2>
+          <ul class="gnb__depth1">
+            <li class="gnb__depth1__list">
+              <button
+                id="gnb1-1"
+                class="gnb__depth1__btn has-depth2"
+                aria-pressed="false"
+                aria-haspopup="true"
+              >
+                은행소개
+              </button>
+              <div class="gnb__depth2-wrap">
+                <ul
+                  class="gnb__depth2"
+                  aria-labelledby="gnb1-1"
+                  aria-hidden="true"
+                >
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-1-1"
+                      >카카오뱅크</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-1-1">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">브랜드</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >주주사 소개</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">오시는 길</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">제휴문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-1-2"
+                      >윤리경영</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-1-2">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">윤리강령</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >임직원행동기준</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-1-3"
+                      >투자정보</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-1-3">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">공시정보</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">재무정보</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a
+                      href="#none"
+                      title="새창으로 열림"
+                      target="_blank"
+                      id="gnb2-1-4"
+                      class="gnb__depth2__subtitle is-link"
+                      rel="noreferrer"
+                    >
+                      인재채용
+                      <span aria-hidden="true" class="pc-only">&gt;</span></a
+                    >
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-1-5"
+                      >새소식</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-1-5">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">공지사항</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">보도자료</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__depth1__list">
+              <button
+                id="gnb1-2"
+                class="gnb__depth1__btn has-depth2"
+                aria-haspopup="true"
+                aria-pressed="false"
+              >
+                상품안내
+              </button>
+              <div class="gnb__depth2-wrap">
+                <ul
+                  class="gnb__depth2"
+                  aria-labelledby="gnb1-2"
+                  aria-hidden="true"
+                >
+                  <li class="gnb__depth2__submenu">
+                    <a
+                      href="./index.html"
+                      class="gnb__depth2__subtitle"
+                      id="gnb2-2-1"
+                      >예적금</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-2-1">
+                      <li class="gnb__depth2__list">
+                        <a href="./index.html" class="gnb__depth2__link"
+                          >입출금통장</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">모임통장</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">세이프박스</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">저금통</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">정기예금</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">자유적금</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">26주적금</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-2-2"
+                      >대출</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-2-2">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">비상금대출</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >마이너스 통장대출</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">신용대출</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >개인사업자 대출</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >전월세보증금 대출</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-2-3"
+                      >서비스</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-2-3">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >내 신용정보</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >해외송금 보내기</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >해외송금 받기</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >프렌즈 체크카드</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-2-4"
+                      >제휴서비스</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-2-4">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >증권사 주식계좌</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >제휴 신용카드</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-2-5"
+                      >mini</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-2-5">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >카카오뱅크 mini</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">mini카드</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__depth1__list">
+              <button
+                id="gnb1-3"
+                class="gnb__depth1__btn has-depth2"
+                aria-haspopup="true"
+                aria-pressed="false"
+              >
+                고객센터
+              </button>
+              <div class="gnb__depth2-wrap">
+                <ul
+                  class="gnb__depth2"
+                  aria-labelledby="gnb1-3"
+                  aria-hidden="true"
+                >
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-3-1"
+                      >이용안내</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-3-1">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >자주 묻는 질문</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >이용시간 안내</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >ATM 이용안내</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">금리안내</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">수수료안내</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">상담안내</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-3-2"
+                      >상담하기</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-3-2">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >고객의 소리</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">1:1 문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-3-3"
+                      >소비자보호</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-3-3">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >소비자보호체계</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >소비자보호 우수사례</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">전자민원</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >소비자보호공시</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >민원사무편람</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">금융정보</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >금융사기 관련공시</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >보안취약점 신고 안내</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-3-4"
+                      >증명서</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-3-4">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >나의 증명서 발급내역</a
+                        >
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link"
+                          >증명서 진위 확인</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="gnb__depth2__submenu">
+                    <a href="#none" class="gnb__depth2__subtitle" id="gnb2-3-5"
+                      >약관 ・ 서식</a
+                    >
+                    <ul class="gnb__depth2__sublist" aria-labelledby="gnb2-3-5">
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">약관</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">서식</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">상품설명서</a>
+                      </li>
+                      <li class="gnb__depth2__list">
+                        <a href="#none" class="gnb__depth2__link">상품공시</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__depth1__list">
+              <a class="gnb__depth1__btn is-selected" href="./event.html"
+                >이벤트</a
+              >
+            </li>
+            <li class="gnb__depth1__list">
+              <a
+                class="gnb__depth1__btn open-scraping"
+                href="#none"
+                title="대출서류 제출하기(새창으로 열림)"
+                target="_blank"
+                rel="noreferrer"
+                >서류제출하기</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="event__inner">
+        <div class="event__title__wrapper">
+          <h2 class="event__title">이벤트</h2>
+          <ul class="tab-list" role="tablist">
+            <li
+              id="ongoingTab"
+              role="tab"
+              aria-controls="ongoing"
+              aria-selected="true"
+              tabindex="0"
+            >
+              진행중<span class="desktop-text"> 이벤트</span>
+            </li>
+            <li
+              id="finishedTab"
+              role="tab"
+              aria-controls="finished"
+              aria-selected="false"
+              tabindex="0"
+            >
+              종료<span class="desktop-text">된 이벤트</span>
+            </li>
+          </ul>
+        </div>
+        <section id="ongoing" role="tabpanel" aria-labelledby="ongoingTab">
+          <h3 class="a11y-hidden">진행중 이벤트</h3>
+          <ul class="event__list">
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >증권사 주식계좌 개설 이벤트 (5~6월)</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_current_0.png"
+                  alt="주식계좌 개설하고 다양한 혜택도 받으세요!"
+                />
+                <em class="event__details__hashtag">#주식계좌 #개설혜택</em>
+                <span class="event__details__period">
+                  <time datetime="2021-05-01">2021.05.01</time>
+                  <span>~</span>
+                  <time datetime="2021-06-30">2021.06.30</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >제휴 신용카드 이용고객 대상 이벤트 (5월)</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_current_1.png"
+                  alt="제휴 신용카드 5월 이벤트 최대 32만원 혜택 증정"
+                />
+                <em class="event__details__hashtag">#제휴신용카드 #혜택증정</em>
+                <span class="event__details__period">
+                  <time datetime="2021-04-30">2021.04.30</time>
+                  <span>~</span>
+                  <time datetime="2021-05-31">2021.05.31</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >한국투자증권 해외주식 투자 가입 이벤트</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_current_2.png"
+                  alt="지금 가입하면 매일 100명에게 랜덤주식 1만원"
+                />
+                <em class="event__details__hashtag"
+                  >#해외주식투자 #한국투자증권</em
+                >
+                <span class="event__details__period">
+                  <time datetime="2021-04-01">2021.04.01</time>
+                  <span>~</span>
+                  <time datetime="2021-05-31">2021.05.31</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >카카오뱅크 프렌즈 체크카드 매월 33,000원의 추가 혜택</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_current_3.png"
+                  alt="집콕 맞춤 혜택 카카오뱅크 프렌즈 체크카드 캐시백 프로모션 시즌 8"
+                />
+                <em class="event__details__hashtag"
+                  >#체크카드 #캐시백 #시즌8</em
+                >
+                <span class="event__details__period">
+                  <time datetime="2021-02-01">2021.02.01</time>
+                  <span>~</span>
+                  <time datetime="2021-07-31">2021.07.31</time>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section
+          id="finished"
+          class="is--invalid"
+          role="tabpanel"
+          aria-labelledby="finishedTab"
+        >
+          <h3 class="a11y-hidden">종료된 이벤트</h3>
+          <ul class="event__list">
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >증권사 주식계좌 개설 이벤트 (3~4월)</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_1.png"
+                  alt="증권사 주식계좌 개설 이벤트 주식계좌 개설하고 다양한 혜택도 받으세요!"
+                />
+                <em class="event__details__hashtag">#주식계좌 #개설혜택</em>
+                <span class="event__details__period">
+                  <time datetime="2021-03-01">2021.03.01</time>
+                  <span>~</span>
+                  <time datetime="2021-04-30">2021.04.30</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >제휴 신용카드 이용고객 대상 이벤트 (4월)</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_2.png"
+                  alt="제휴 신용카드 4월 이벤트 최대 31만원 혜택"
+                />
+                <em class="event__details__hashtag">#제휴신용카드 #혜택증정</em>
+                <span class="event__details__period">
+                  <time datetime="2021-03-31">2021.03.31</time>
+                  <span>~</span>
+                  <time datetime="2021-04-30">2021.04.30</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >여기저기 흩어져있는 내 돈 '가져오기' 이벤트</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_3.png"
+                  alt="여기저기 흩어져있는 내 돈 가져오기"
+                />
+                <em class="event__details__hashtag"
+                  >#오픈뱅킹 #가져오기이벤트</em
+                >
+                <span class="event__details__period">
+                  <time datetime="2021-03-11">2021.03.11</time>
+                  <span>~</span>
+                  <time datetime="2021-04-10">2021.04.10</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >제휴 신용카드 이용고객 대상 이벤트 (3월)</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_4.png"
+                  alt="제휴 신용카드 3월 이벤트 최대 33만원 혜택"
+                />
+                <em class="event__details__hashtag">#제휴신용카드 #혜택증정</em>
+                <span class="event__details__period">
+                  <time datetime="2021-02-26">2021.02.26</time>
+                  <span>~</span>
+                  <time datetime="2021-03-31">2021.03.31</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >KB증권 주식계좌 개설하기 이벤트</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_5.png"
+                  alt="주식계좌 최초 개설하면 즉시 5천원"
+                />
+                <em class="event__details__hashtag">#주식계좌 #KB증권</em>
+                <span class="event__details__period">
+                  <time datetime="2020-10-01">2020.10.01</time>
+                  <span>~</span>
+                  <time datetime="2021-02-28">2021.02.28</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >한국투자증권 해외주식 투자 가입 이벤트</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_6.png"
+                  alt="해외주식 투자 시작하고, 해외주식도 받으세요!"
+                />
+                <em class="event__details__hashtag"
+                  >#해외주식투자 #한국투자증권</em
+                >
+                <span class="event__details__period">
+                  <time datetime="2020-09-14">2020.09.14</time>
+                  <span>~</span>
+                  <time datetime="2021-02-28">2021.02.28</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >한국투자증권 주식계좌 개설하기 이벤트</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_7.png"
+                  alt="주식계좌 개설하면 국내/해외주식 증정"
+                />
+                <em class="event__details__hashtag">#주식계좌 #한국투자증권</em>
+                <span class="event__details__period">
+                  <time datetime="2020-09-14">2020.09.14</time>
+                  <span>~</span>
+                  <time datetime="2021-02-28">2021.02.28</time>
+                </span>
+              </a>
+            </li>
+            <li class="event__details">
+              <a
+                href="#none"
+                class="event__details__link"
+                target="_blank"
+                title="새 창 열림"
+              >
+                <strong class="event__details__title"
+                  >NH투자증권 주식계좌 개설하기 이벤트</strong
+                >
+                <img
+                  class="responsiveImg"
+                  src="./images/event_end_8.png"
+                  alt="주식계좌 개설하면 즉시 5천원 축하금"
+                />
+                <em class="event__details__hashtag">#주식계좌 #NH투자증권</em>
+                <span class="event__details__period">
+                  <time datetime="2020-05-01">2020.05.01</time>
+                  <span>~</span>
+                  <time datetime="2021-02-28">2021.02.28</time>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <a
+      href="#"
+      class="icon iconGoToTop"
+      role="button"
+      aria-label="처음으로 가기"
+    >
+    </a>
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="a11y-hidden">서비스 이용정보</h2>
+        <ul class="guide__menu">
+          <li class="guide__list">
+            <a href="#none" class="guide__link">모바일뱅킹 서비스 이용약관</a>
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link">전자금융거래 기본약관</a>
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link is-strong"
+              >위치기반 서비스 이용약관</a
+            >
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link is-strong">개인정보처리방침</a>
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link is-strong">전자민원접수</a>
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link">보호금융상품등록부</a>
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link">상품공시실</a>
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link">경영공시</a>
+          </li>
+          <li class="guide__list">
+            <a href="#none" class="guide__link">공지사항</a>
+          </li>
+        </ul>
+        <address class="address">
+          <span>대표전화 <a href="tel:15993333">1599-3333</a></span
+          ><span class="address__tel-abroad">
+            (해외 <a href="tel:0264203333">+82-2-6420-3333</a>)</span
+          >
+        </address>
+        <small class="copyright"
+          >Copyright &copy; KakaoBank Corp. All rights reserved.</small
+        >
+        <h2 class="a11y-hidden">카카오뱅크 공식채널 바로가기</h2>
+        <ul class="channel">
+          <li class="channel__list">
+            <a
+              href="#none "
+              class="channel__link"
+              target="_blank"
+              title="페이스북(새창으로 열림)"
+              ><span class="channel__link__img facebook">페이스북</span></a
+            >
+          </li>
+          <li class="channel__list">
+            <a
+              href="#none "
+              class="channel__link"
+              target="_blank"
+              title="블로그(새창으로 열림)"
+              ><span class="channel__link__img blog">블로그</span></a
+            >
+          </li>
+          <li class="channel__list">
+            <a
+              href="#none "
+              class="channel__link"
+              target="_blank"
+              title="네이버포스트(새창으로 열림)"
+              ><span class="channel__link__img naver">네이버포스트</span></a
+            >
+          </li>
+          <li class="channel__list">
+            <a
+              href="#none "
+              class="channel__link"
+              target="_blank"
+              title="유튜브(새창으로 열림)"
+              ><span class="channel__link__img youtube">유튜브</span></a
+            >
+          </li>
+        </ul>
+        <a href="#none" class="weba11y__link pc-only"
+          ><img
+            alt="과학기술정보통신부 web accessibility 인증마크(웹 접근성 품질인증 마크)"
+            class="weba11y__img"
+            src="./images/img-webaccessibility@2x.png"
+            title="국가 공인 인증기관 : 웹와치"
+          />웹 접근성 품질인증</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

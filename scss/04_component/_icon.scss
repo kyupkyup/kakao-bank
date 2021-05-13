@@ -1,0 +1,38 @@
+// 아이콘 스타일 ------------------------------------------------------------------ /
+.icon {
+  // 아이콘 공통 -------------------------------------------------------------------- /
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+  }
+
+  // 처음으로 가기 (GoToTop) ------------------------------------------------------------ /
+  &GoToTop {
+    position: fixed;
+    right: em(50);
+    width: em(50);
+    height: em(50);
+    bottom: em(100);
+    z-index: 10;
+
+    &::before {
+      background-image: url(../images/icon-go-to-top.svg);
+      opacity: 0.5;
+    }
+  }
+}

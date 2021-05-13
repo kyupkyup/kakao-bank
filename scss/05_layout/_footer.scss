@@ -1,0 +1,202 @@
+.footer {
+  position: relative;
+  padding-bottom: 24px;
+  background: #f0f0f0;
+
+  // 푸터 inner (1080px) ------------------------------------------------------------------------ /
+  &__inner {
+    @include mobile {
+      padding: 100px em(20) 0;
+    }
+    @include tablet {
+      position: relative;
+      padding: 40px em(20) 20px;
+    }
+    @include desktop {
+      @include boxFixed;
+    }
+  }
+}
+
+.guide {
+  &__link {
+    position: relative;
+    display: block;
+    padding: em(10) 10px;
+    font-size: rem(13);
+    color: #666;
+  }
+
+  &__link.is-strong {
+    color: #000;
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -6px;
+    width: 1px;
+    height: 14px;
+    background: #aaa;
+  }
+
+  &__list:last-child .guide__link::after {
+    display: none;
+  }
+
+  @include mobile {
+    &__menu {
+      text-align: center;
+    }
+
+    &__list {
+      display: inline-block;
+    }
+  }
+
+  @include tablet {
+    &__menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      white-space: nowrap;
+    }
+  }
+
+  @include desktop {
+    &__menu {
+      justify-content: space-between;
+    }
+
+    &__link::after {
+      right: -3px;
+    }
+  }
+}
+
+.address {
+  font-size: rem(13);
+
+  @include mobile {
+    margin-top: 14px;
+    padding: em(10) 0;
+    text-align: center;
+  }
+
+  @include tablet {
+    display: inline-block;
+    margin-right: 20px;
+    padding: em(10) 10px;
+  }
+}
+
+.copyright {
+  font-size: rem(12);
+  color: $gray;
+
+  @include mobile {
+    display: block;
+    padding: em(10) 0;
+    text-align: center;
+  }
+}
+
+.channel {
+  position: absolute;
+
+  &__list {
+    display: inline-block;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: rem(12);
+  }
+
+  &__link__img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-sprite.png);
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+
+    &.facebook {
+      background-position: 0 -90px;
+    }
+
+    &.blog {
+      background-position: -30px -90px;
+    }
+
+    &.naver {
+      background-position: -60px -90px;
+    }
+
+    &.youtube {
+      background-position: -90px -90px;
+    }
+  }
+
+  @include mobile {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #e5e5e5;
+    text-align: center;
+
+    &__link {
+      margin: 15px 10px;
+    }
+
+    &__link::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: -12px;
+      width: 2px;
+      height: 20px;
+      background: #ccc;
+    }
+
+    &__list:last-child .channel__link::after {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  @include desktop {
+    right: 0;
+  }
+}
+
+.weba11y {
+  &__link {
+    display: block;
+    margin-top: 14px;
+    width: 180px;
+    font-weight: bold;
+    font-size: rem(14);
+    color: #666;
+  }
+
+  &__img {
+    margin-right: 10px;
+    width: 48px;
+  }
+}

@@ -1,0 +1,14 @@
+// Auto Margin을 활용한 박스 가운데 정렬 ------------------------------------------------ /
+@mixin autoMargin($marginX: auto) {
+  margin-left: $marginX;
+  margin-right: $marginX;
+}
+
+// 요소 박스의 크기 고정 ----------------------------------------------------------- /
+@mixin boxFixed($width: 1080px, $paddingX: 0) {
+  width: $width;
+  padding-left: $paddingX;
+  padding-right: $paddingX;
+  @include autoMargin();
+  @content;
+}

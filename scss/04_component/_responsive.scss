@@ -1,0 +1,10 @@
+// 반응형 이미지 ------------------------------------------------------------------- /
+.responsiveImg {
+  max-width: 100%;
+  height: auto;
+
+  // IE10+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    height: (320/678) * 100%;
+  }
+}

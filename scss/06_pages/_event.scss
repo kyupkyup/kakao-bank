@@ -1,0 +1,140 @@
+.body-event .main {
+  padding-top: 60px;
+  background: rgb(248, 248, 248);
+  @include tablet {
+    padding-top: 85px;
+  }
+}
+
+.event {
+  &__inner {
+    padding: 0 em(20) em(30);
+
+    @include desktop {
+      @include boxFixed;
+      max-width: 100%;
+    }
+  }
+
+  &__title__wrapper {
+    @include flexbox($justify-content: space-between);
+    margin: em(40) 0 em(20);
+  }
+
+  &__title {
+    font-size: rem(23);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__list {
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+
+    @include tablet {
+      @include autoMargin;
+    }
+  }
+}
+
+.tab-list {
+  @include flexbox;
+  color: $grayscaleGray2;
+
+  li {
+    cursor: pointer;
+    @include focusVisible();
+  }
+
+  [aria-selected='true'] {
+    border-bottom: 2px solid $black;
+    color: $black;
+  }
+
+  @include mobile {
+    font-weight: 700;
+    font-size: rem(15);
+
+    :nth-child(1) {
+      margin-right: em(25);
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: em(20);
+    justify-content: space-between;
+
+    li {
+      width: 49%;
+      text-align: center;
+      padding: em(10) 0 em(20);
+      font-size: rem(20);
+    }
+  }
+}
+
+.desktop-text {
+  @include mobile {
+    display: none;
+  }
+}
+
+.event__details {
+  margin-bottom: em(20);
+  padding: em(10);
+  border-radius: em(10);
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+  @include tablet {
+    &:nth-child(odd) {
+      float: left;
+    }
+
+    &:nth-child(even) {
+      float: right;
+    }
+  }
+
+  @include tablet {
+    width: 49%;
+  }
+
+  &__link {
+    @include flexbox(column, center);
+  }
+
+  &__hashtag {
+    color: $secondaryLightBlue;
+    font-size: rem(12);
+    line-height: 1.5;
+    margin-top: em(10);
+    padding-left: em(10);
+  }
+
+  &__title {
+    order: 1;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: rem(15);
+    padding-left: em(10);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__period {
+    order: 2;
+    font-size: rem(13);
+    line-height: 1.5;
+    margin-bottom: em(10);
+    color: $grayscaleGray2;
+    padding-left: em(10);
+  }
+}
