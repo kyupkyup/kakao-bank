@@ -1,6 +1,8 @@
 # kakao-bank
 
-💰 HTML/CSS를 활용한 팀 프로젝트- 2조 카카오뱅크 [클론 페이지 보기](https://chacha912.github.io/kakao-bank/index.html)
+💰 HTML/CSS를 활용한 팀 프로젝트- 2조 카카오뱅크   
+- [클론 페이지 보기](https://chacha912.github.io/kakao-bank/index.html)  
+- [발표자료 보기](./2팀발표자료.pdf)
 
 # 카카오뱅크
 
