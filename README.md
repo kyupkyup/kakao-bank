@@ -1,6 +1,6 @@
 # kakao-bank
 
-💰 HTML/CSS를 활용한 팀 프로젝트- 2조 카카오뱅크
+💰 HTML/CSS를 활용한 팀 프로젝트- 2조 카카오뱅크 [클론 페이지 보기](https://chacha912.github.io/kakao-bank/index.html)
 
 # 카카오뱅크
 
@@ -36,7 +36,7 @@ html 과 css를 이용해서 카카오뱅크를 클론코딩하는 팀 프로젝
 위와 같은 문제가 있었고, 해당 문제들을 KWCAG 지침에서 찾아보았을 때는 아래와 같이 정리할 수 있었다.
 ![](https://images.velog.io/images/lky9303/post/dfc5a68b-51a1-457d-bd22-6ef3e2aa5653/image.png)
 
-크게
+### 
 
 1. **구체적이지 않은 대체 텍스트**
 
@@ -91,23 +91,25 @@ _
 
 ### 마크업
 
-#### 메뉴의 depth가 너무 깊은 문제
+#### 메가 메뉴 적용
 
-- aria-labelled를 사용해 상위 depth와 연관성을 만들어줌
+- 카카오뱅크의 메뉴는 depth3까지 들어가므로 메가 메뉴를 적용해봄
+- depth2 메뉴에 어떤 시맨틱한 태그를 사용하면 좋을지 고민
+
+- depth가 깊어지더라도 기본 시맨틱한 태그를 사용하는 게 좋다는 결론을 내림. 따라서 ul-li-a 로 리스트와 링크 정보를 모두 제공 
 - aria의 property와 state를 통해 추가 정보 제공
+- 추후 js를 이용해 키보드 인터렉션을 구현할 수 있다면 더 좋은 접근성을 만들어낼 수 있을 것.
 
-추가적으로 js를 이용해 키보드 인터렉션을 구현할 수 있다면 더 좋은 접근성을 만들어낼 수 있을 것.
-
-#### 디자인을 위한 무분별한 강조 태그 사용
+#### 스타일을 위한 마크업을 의미있게 개선
 
 ![](https://images.velog.io/images/lky9303/post/8bd57d5e-635a-4e7c-9539-d4a05345d4ec/image.png)
-의미론적으로 해당 strong 태그의 내용은 강조하기 위한 것이 아니다. 이를 해결하기 위해 dl dt dd 를 사용하는 것이 더 옳다고 생각했다.
+카카오뱅크 페이지 전체적으로 굵은 글자를 표시하기 위해 `strong`태그를 사용함
+strong 태그는 내용을 강조하는 의미로, 단지 굵은 글자 스타일을 위한 사용은 시맨틱한 태그 사용이라고 보기 어려움
+위의 경우, `기본 금리`는 `연 0.1%` 라는 key-value 값으로 볼 수 있으므로 dl-dt-dd 태그를 적용
 
-또한 anchor 태그와 하위 리스트 와의 관계를 명시해주지 않아서 접근성이 떨어지는 문제가 있었다. 이를 wai-aria의 aria-controls 와 aria-labelledby를 사용해서 anchor 태그와 펼쳐지는 영역의 관계를 명시해주었다.
+#### 시맨틱한 태그로 부족할 경우, 적절한 wai-aria 사용
 
-#### 잘못된 wai-aria 사용
-
-탭 ui 구조에서 wai-aria를 잘못 사용하고 있었다.
+wai-aria practice의 메뉴, 탭, 아코디언 UI 예시 참고하여 적용
 
 ### 성능
 
@@ -129,19 +131,9 @@ _
 
 ## 결과
 
-### 웹페이지 구성
-
-3단 구조로 구성 - 헤더, 메인, 푸터
-
 ### 웹표준검사
 
-#### 입출금통장 페이지
-
-![](https://images.velog.io/images/lky9303/post/7ba8d2b2-3144-4793-a1cd-d43968451c33/image.png)
-
-#### 이벤트 페이지
-
-![](https://images.velog.io/images/lky9303/post/cb0085c3-f435-403d-9394-551d6a17e13d/image.png)
+![웹표준검사](https://user-images.githubusercontent.com/81357083/118090454-8e960f80-b404-11eb-9c47-ab623e261542.png)
 
 ### 라이트 하우스 검사 결과
 
